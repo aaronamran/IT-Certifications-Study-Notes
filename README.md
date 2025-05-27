@@ -7,9 +7,12 @@ Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Pos
 
 1. Infrastructure
    - AZ-900 | Azure Fundamentals
-3. Data and AI
-4. Digital app and innovation
-5. Modern work
+2. Data and AI
+   - AI-900 | AI Fundamentals
+   - DP-900 | Azure Data Fundamentals
+3. Digital app and innovation
+4. Modern work
    - MS-900 | Microsoft 365 Fundamentals
-7. Business applications
-8. Security
+5. Business applications
+6. Security
+   - SC-900 | Security, Compliance and Identity Fundamentals
