@@ -1,7 +1,7 @@
-# Microsoft Certifications Study Notes
-Repository to store concise study notes for Microsoft certifications. Hey, if this repo is useful for you, glad to hear!
+# IT Certifications Study Notes
+Repository to store concise study notes for IT certifications. Hey, if this repo is useful for you, glad to hear!
 
-Microsoft Certifications Domains
+## Microsoft Certifications Domains
 
 Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Poster-en-us.pdf](https://arch-center.azureedge.net/Credentials/Certification-Poster-en-us.pdf)
 
@@ -16,3 +16,31 @@ Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Pos
 5. Business applications
 6. Security
    - SC-900 | Security, Compliance and Identity Fundamentals
+
+
+## Oracle Certifications Domains
+1. Oracle Cloud Infrastructure (OCI)
+   - [OCI Foundations]()
+   - [OCI Architect]()
+   - [Oracle Redwood Application Developer]()
+   - [OCI Migration Architect]()
+   - [OCI Networking]()
+   - [OCI Developer]()
+   - [OCI DevOps]()
+   - [OCI Applications Integration]()
+   - [OCI Observability]()
+2. Multicloud
+   - [OCI Multicloud Architect]()
+3. Data
+   - [Oracle Data Platform]()
+   - [MySQL HeatWave Implementation Associate]()
+   - [Oracle Autonomous Database Cloud]()
+   - [Oracle Cloud Database Services]()
+   - [Oracle APEX Cloud Developer]()
+   - [Oracle Analytics Cloud]()
+   - [Oracle AI Vector Search]()
+4. AI
+   - [OCI AI Foundations]()
+   - [OCI Generative AI]()
+   - [Oracle AI Vector Search]()
+   - [OCI Data Science]()
