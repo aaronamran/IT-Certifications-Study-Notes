@@ -65,7 +65,19 @@
 - Priority routes are based on CIDR blocks that are bigger or more specific
 - Peering has 2 possible scenarios: Local peering (within the same region) and remote peering (two networks in different OCI regions)
 - Dynamic Routing Gateway v2 is for handling large number of networks (max 300 VCNs) and does not need to use a local peering gateway for maintaining point-to-point connectivity 
-- 
+- Security list are firewall rules associated with subnet. It applies to all instances in or out of the VCN
+- Network Security Groups (NSG) apply to individual vNICs, it is possible to have 2 instances in a single subnet
+- Load Balancer aka Reverse Proxies would proxy traffic from clients to various backend servers
+- Layer 7 Load Balancer understands HTTP/S. Comes in 2 different shapes: Flexible shape (define minimum speed, maximum speed and range) and Dynamic shape (predefined shapes: micro, small, medium, large). Can be public or private. Has higher level intelligence due to packet inspection
+- Layer 3 & 4 Network Load Balancer understands TCP, UDP and ICMP. Can be public or private. Much faster than HTTP Load Balancer, has lower latency. Prioritises performance
+
+#### Skill Check
+- Which VCN component blocks inbound traffic, but enables outbound traffic to the internet? NAT Gateway
+- Which OSI layer traffic is supported by the OCI Network Load Balancer? Layer 4 (transport)
+- Which statement about a Virtual Cloud Network (VCN) is true? A VCN can reside only in a single region but can span multiple availability domains
+- Which component is NOT created by default with the creation of a Virtual Cloud Network? Default Local Peering Gateway
+- Which statement about Virtual Cloud Network (VCN) peering between two VCNs is NOT valid? A VCN peering connection is a VPN-based connection
+  
 
 
 ## Compute
