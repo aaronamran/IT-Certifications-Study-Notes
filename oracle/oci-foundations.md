@@ -10,7 +10,7 @@
 -  Each AD has 3 FD. FD are logical data centers within an AD. Resources placed in FD will not share single points of hardware failure
 -  Replicate app and DB on each FD and also on another AD. Use Oracle Data Guard to sync data
 
-### Skill Check
+#### Skill Check
 - Which statement about regions and availability domains is true? An OCI region has one or more availability domains
 - Which statement about OCI is NOT true? A single fault domain can be associated with multiple availability domains within a region
 - Which OCI service is NOT intended for a multicloud solution? Oracle Roving Edge Infrastructure
@@ -39,11 +39,32 @@
   ```
   Allow <domain_name>/<group_name> to <verb> <resource-type> in <location> where <condition>
   ```
-- 
+- Tenancy admin is the person who creates and manages an account
+- Best practice is create an OCI admin (can be set of users) and group them all under OCI-admin-group, then write policies for this group and they all operate under a dedicated compartment
+
+
+#### Skill Check
+- Which is NOT a component of OCI Identity and Access Management? Network Security Group
+- Which statement about OCI compartments is NOT true? It is a best practice to create all your resources in the root compartment
+- How is a resource in OCI identified? With OCID
+- Which Identity and Access Management component helps to organise multiple users into a team? Groups
+- Which statement about OCI Identity and Access Management is true? It enables you to control access for a group of users
   
 
 
 ## Networking
+- Virtual Cloud Network (VCN) is a private SDN used for secure communication for instances
+- VCN has an address space (denoted in a CIDR notation) that can be broken down into subnetworks
+- Computer instances are instantiated in these subnetworks
+- Internet gateway which is massively scalable and highly available is used for communication to anything on the internet (bidirectional)
+- NAT gateway is a router for NAT as a service (unidirectional, from private subnet to internet)
+- Service gateway lets resources in VCN securely access public OCI services without using internet or NAT gateway
+- Dynamic routing gateway is a virtual router that provides a path for private traffic between your VCN and destinations other than the internet (on-premises environment)
+- Route table is used by VCN to send traffic out of VCN to the internet, on-prem network or peered VCN. It consists of a set of route rules, where each rule provides a destination CIDR block and route target. Route target is the next hop for the traffic that matches the destination CIDR block
+- Traffic within the VCN subnet is automatically handled by the VCN local routing
+- Priority routes are based on CIDR blocks that are bigger or more specific
+- Peering has 2 possible scenarios: Local peering (within the same region) and remote peering (two networks in different OCI regions)
+- Dynamic Routing Gateway v2 is for handling large number of networks (max 300 VCNs) and does not need to maintain point-to-point connectivity using a local peering gateway
 - 
 
 
