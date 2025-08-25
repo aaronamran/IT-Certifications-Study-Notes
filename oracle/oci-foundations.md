@@ -64,7 +64,7 @@
 - Traffic within the VCN subnet is automatically handled by the VCN local routing
 - Priority routes are based on CIDR blocks that are bigger or more specific
 - Peering has 2 possible scenarios: Local peering (within the same region) and remote peering (two networks in different OCI regions)
-- Dynamic Routing Gateway v2 is for handling large number of networks (max 300 VCNs) and does not need to maintain point-to-point connectivity using a local peering gateway
+- Dynamic Routing Gateway v2 is for handling large number of networks (max 300 VCNs) and does not need to use a local peering gateway for maintaining point-to-point connectivity 
 - 
 
 
