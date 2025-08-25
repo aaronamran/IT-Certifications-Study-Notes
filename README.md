@@ -20,7 +20,7 @@ Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Pos
 
 ## Oracle Certifications Domains
 1. Oracle Cloud Infrastructure (OCI)
-   - [OCI Foundations]()
+   - [OCI Foundations](https://github.com/aaronamran/IT-Certifications-Study-Notes/blob/main/oracle/oci-foundations.md)
    - [OCI Architect]()
    - [Oracle Redwood Application Developer]()
    - [OCI Migration Architect]()
