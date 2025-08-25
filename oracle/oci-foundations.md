@@ -81,7 +81,15 @@
 
 
 ## Compute
+- OCI Compute Service provides VMs (shared, multi-tenant), Bare Metal servers and Dedicated Host (don't share VM host with other customers) with scalability, high performance and lower pricing
+- Flexible shape means can choose own cores, CPU processors and memory. Has T-shirt sizing (S, M, L). Processor options: AMD, Intel, ARM
+- Preemptible VMs are low cost, short lived VMs suitable for batch jobs and fault tolerant workloads and are 50% cheaper
+- An instance is a compute host which has several dependencies. An OCI region is comprised of multiple ADs (data centers). First dependency is Virtual Cloud Network divided into subnets. Another dependency is boot volume, boot disk and block volumes
+- Live migration is to migrate VM to another host in data center without rebooting
 - 
+
+
+
 
 
 ## Storage
