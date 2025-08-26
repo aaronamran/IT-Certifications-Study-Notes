@@ -82,22 +82,65 @@
 
 ## Compute
 - OCI Compute Service provides VMs (shared, multi-tenant), Bare Metal servers and Dedicated Host (don't share VM host with other customers) with scalability, high performance and lower pricing
-- Flexible shape means can choose own cores, CPU processors and memory. Has T-shirt sizing (S, M, L). Processor options: AMD, Intel, ARM
+- Flexible shape means can choose own cores, CPU processors and memory. Has T-shirt sizing (S, M, L). Processor options: AMD, Intel, Ampere (ARM)
 - Preemptible VMs are low cost, short lived VMs suitable for batch jobs and fault tolerant workloads and are 50% cheaper
 - An instance is a compute host which has several dependencies. An OCI region is comprised of multiple ADs (data centers). First dependency is Virtual Cloud Network divided into subnets. Another dependency is boot volume, boot disk and block volumes
 - Live migration is to migrate VM to another host in data center without rebooting
-- 
+- Vertical scaling: scale-up or scale-down, new shape must have same hardware architecture, requires downtime
+- Horizontal scaling (Autoscaling): add more VMs of the same shape, scale-out or scale-in
+- VMs : Hardware > Hypervisor > VM > OS > Library/dependencies > Application
+- Containers : Hardware > OS > Container Runtime (Docker) > Container > Library/dependencies > Application
+- Container orchestration: Process of automatically deploying and managing containers
+- Docker is used to manage and build containers, Kubernetes links containers running on multiple hosts and orchestrates them
+- Pod is a group of one or more containers with shared storage and network resources and specification file on how to run the containers. Smallest unit of compute
+- Oracle manages control plane nodes while customer manages the worker plane nodes
+- Oracle Container Engine for Kubernetes (OKE) Clusters includes Basic Clusters and Enhanced Clusters
+- Managed nodes: you are responsible for managing managed nodes, upgrading Kubernetes and managing cluster capacity, and you can create managed nodes and node pools in both basic clusters and enhanced clusters
+- Virtual nodes: provides serverless Kubernetes experience. Kubernetes software is upgraded including security patching. You can only create virtual nodes and virtual node pools in enhanced clusters
+- OCI Container Instances eliminates operational complexities (manage VMs and servers, OS patching, container runtime updates) by directly running container images. Environment variables, resource limits and startup options can be specified
+- Oracle Functions: event driven architecture. Function runs in container and is billed only for the duration the function runs and can be executed in parallel
 
-
+#### Skill Check
+- Which processor type is NOT available for the OCI Compute service? Snapdragon
+- What is the primary purpose of OCI Functions? To execute code in response to events or HTTP requests
+- Which type of storage is associated with instances in the OCI Compute service? Block storage
+- Which 2 parameters can be customised when creating a flexible shape compute instance? Amount of memory & number of OCPUs
+- Which statement about the working of autoscaling in an instance pool is true? It automatically provisions and removes instances in an instance pool
 
 
 
 ## Storage
+- Questions to answer: Persistent vs non-persistent storage? Type of data stored? Performance? Capacity? Durability? Connectivity? Protocol?
+- Local NVMe: locally attached storage, NVMe SSDs, for performance sensitive applications due to high IOPs
+- Block Volume: take locally stored, attached storage and move it to a remote network server to make it persistent and durable. The data is managed as fixed-sized blocks, create a partition, create a filesystem, mount the filesystem
+- File Storage: shared file storage system. Managed as files and directories, does not need partitioning, still needs mounting
+- Object Storage: for storing any kinds of data available on web. Uses HTTP verbs
+- OCI Data Migration Services: Data Transfer Disk > send disks to Oracle and they migrate data for you. Data Transfer Appliance > use a much larger appliance to send data
+- OCI Object Storage: internet-scale, high performance storage platform. Data is managed as objects, ideal for unstructured data. Has regional or public service with multiple storage tiers
+- OCI Object Storage Scenarios: Content repository, stores unstructured and semi-structured data, used for big data analytics and as archive/backup
+- Object are key/name value pairs. Can have metadata. Objects are stored in buckets and have unique names. Has a flat hierarchy, and folder structure is simulated by using prefixes. Namespace (account name) is a top-level container for all buckets/objects
+- Standard tier (hot): fast, immediate access. Most recent copy of the data. Instantaneous retrieval, cannot be downgraded
+- Infrequent access tier (cool): costs lower than standard tier, minimum retention requirement: 31 days. Has retrieval fees
+- Archive tier (cold): seldom or rarely accessed data, minimum retention requirement: 90 days. Objects need to be restored before download. Restore time: 1 Hour, download time: 24 hours. Cannot be upgraded
+- Block Volume: can create and attach disks, detach and delete disks and keep data even after instance is deleted
+- Lower Cost tier: Large sequential I/O workloads, 2 IOPS/GB
+- Balanced tier: Balanced choice for random I/O, 60 IOPS/GB
+- Higher Performance tier: Most I/O-demanding workloads, 75 IOPS/GB
+- Ultra High Performance: Highest I/O-demanding workloads. 90-225 IOPS/GB
+- Replication of Block Volumes: replicated across regions for disaster recovery, migration or business expansion
+- Volume Groups: group volumes together for easy management and time consistent backups
+- File Storage: hierarchical collection of documents organised into named directories
+- In the cloud, distributed file systems used are NFS for Linux and SMB for Windows
+- Use cases of File Storage: Oracle Apps Lift and Shift, General purpose file systems, micro services and containers
+- OCI File Storage: Shared storage for compute instances, supports NFSv3 distributed file system, data protection: snapshots, security: data-at-rest and in-transit encryption
 - 
+
 
 
 ## Security
 - 
+
+
 
 
 ## Governance and Administration
