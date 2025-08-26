@@ -133,18 +133,62 @@
 - In the cloud, distributed file systems used are NFS for Linux and SMB for Windows
 - Use cases of File Storage: Oracle Apps Lift and Shift, General purpose file systems, micro services and containers
 - OCI File Storage: Shared storage for compute instances, supports NFSv3 distributed file system, data protection: snapshots, security: data-at-rest and in-transit encryption
-- 
+
+
+#### Skill Check
+- You want to store the backup of a database in cloud storage for an extended period at the lowest storage cost. Which object storage tier would you use for storing these backup files? Archive
+- What feature of the OCI Block Volume service ensures data durability and protection against hardware failures? Replication
+- You have created an Object Storage bucket of Archive tier. Which statement is NOT valid for the Archive Storage tier? The Archive storage can be upgraded to Standard storage
+- In the OCI Object Storage Service, what is the primary purpose of a pre-authenticated request URL? To provide temporary and secure access to a specific object
+- You have an extremely high performance database workload that requires at least 90 IOPS/GB and 90k IOPS per volume. Which OCI Block Volume performance level can be used to meet this requirement? Ultra High Performance
 
 
 
 ## Security
-- 
+- Shared security model: Oracle manages infra, customer manages OS to app and data
+- Defense-in-depth layers (highest to lowest layer):
+  - Infra protection > DDoS protection, WAF, Security Lists/NSG, Network Firewall
+  - Identity and Access Management > IAM, MFA, Federation, Audit
+  - OS and Workload Protection > Shielded Instances, Dedicated Host, Bastion, OS Management
+  - Data Protection > Vault Key Management, Vault Secrets Management, Data Safe, Certificates
+  - Detection and Remediation > Cloud Guard, Security Zones, Threat Intel, Vulnerability Scanning
+- Oracle Cloud Guard: automated cloud security posture. Specify targets (resources), detect issues, problems and potential security issue and responders do corrective actions
+- Security Zone: cloud compartment where security cannot be disabled. Security zone recipe enforce specified policies
+- Security Advisor: service that unifies security zone, cloud guard and other cloud capabilities
+- Symmetric Encryption: use same key to encrypt and decrypt messages
+- Asymmetric Encryption: public key to encrypt messages, private key to decrypt messages
+- OCI Vault: centrally manage encryption keys and secrets (passwords, credentials, SSH-keys, auth tokens)
+- Envelope Encryption (two-tiered hierarchy): master key encrypts data key, data key encrypts storage. Deletion of master key means no way to recover data, that's why have soft delete for keys with 7-day gap
 
+
+#### Skill Check
+- What is the primary purpose of the OCI Vault service? To store and manage encryption keys and secrets
+- Which of the following is NOT a component of the OCI Vault service? Database backup
+- What is the main advantage of using OCI Security Zones when deploying resources in your cloud environment? Ensuring adherence to security best practices and policies
+- Which option is NOT a component of Oracle Cloud Guard? Targets
+- In the OCI shared security responsibility model, who is responsible for securing the underlying cloud infrastructure? Oracle
 
 
 
 ## Governance and Administration
-- 
+- Pay as you go (PAYG): need to pay for VM even if not in use
+- Consumption Based Pricing: charged per consumed resource for serverless and functions
+- Annual Universal Credits: must use credits within 12 months
+- Bring your own license (BYOL): apply current on-prem Oracle License to equivalent IaaS and PaaS cloud services
+- OCI Budgets: track costs in tenancy, setup alerts, cost analysis, usage reports, compartment quotas
+- Cloud Advisor analyses cloud resources and provide recommendations to maximise cost savings and optimise performance, security and availability
+- Tags are key value pairs to organise resources
+- Free-form Tags: basic, comprises of key and value only, no defined schema or access restriction
+- Defined Tags (recommended): more features and control, contained in namespaces, defined schema, secured with policy
+- Oracle Support Rewards: customers earn Support Rewards that are then applied as a form of payment for their software update licenses. 
 
 
+#### Skill Check
+- In OCI, what can you set up to receive notifications when budget thresholds are reached? Email alerts
+- In OCI, what is the key difference between service limits and compartment quotas? Service limits are set by Oracle for a tenancy or region, while compartment quotas are user-defined for specific compartments
+- Which type of traffic is charged under data transfer costs in OCI? Egress to the internet is charged
+- Which is NOT a factor that influences pricing in OCI? Choice of OCI region
+- Which is NOT a supported OCI pricing model? Sovereign subscriptions
+
+  
 
