@@ -192,3 +192,15 @@
 
   
 
+## Sample Exam Questions
+- Which component of OCI Networking Service provides a private connection between a VCN and an on-premises network? Dynamic Routing Gateway (DRG)
+- What is the primary purpose of the Network Security Group (NSG) in OCI Networking Service? To control traffic flow between specified resources within a VCN
+- What is the term used to describe the combination of an instance's shape, base iimage, and metadata in OCI compute service? Instance Configuration
+- What is the primary purpose of OCI Functions? To execute code in response to events or HTTP requests
+- What feature of OCI Object Storage Service enables users to automatically move objects between storage tiers based on predefined rules? Object Lifecycle Management
+- Which performance level is NOT available in OCI Block Volume Service? Low Performance
+- Which of the following features is NOT provided by OCI Security Zones? Storing and managing encryption keys and secrets
+- Which OCI service is responsible for securely storing and managing encryption keys and secrets? Vault
+- Which factors does NOT impact the cost of running a virtual machine instance in OCI? The region used by the VM instance
+- Which of the following best describes the relationship between OCI Regions and Availability Domains? An AD is part of a region
+  
