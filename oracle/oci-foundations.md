@@ -204,3 +204,22 @@
 - Which factors does NOT impact the cost of running a virtual machine instance in OCI? The region used by the VM instance
 - Which of the following best describes the relationship between OCI Regions and Availability Domains? An AD is part of a region
   
+
+## Practice Exam
+- Which is NOT a component of an IAM policy statement in OCI? Encryption
+- Why is it important to choose an OCI Region close to your users? To minimise latency and improve application performance
+- Which protocol is used by the OCI File Storage service for file access? NFS (Network File System)
+- In the OCI Object Storage service, which storage tier is designed for rarely or seldom accessed data that can be restored within hours? One Zone-Infrequent Access
+- Which is a key difference between Security Lists and Network Security Groups in OCI?
+- Which data transfer type is generally free of charge in OCI? Ingress data transfer
+- Which security feature prevents users from making risky or non-compliant changes to OCI resources? OCI Security Zones
+- What is the primary purpose of setting up budgets in OCI? To automatically pause OCI services when spending reaches a certain threshold
+- Which is NOT a type of OCI Compute Instance? Nano instances
+- What is the primary function of the Auto-Tiering feature in the OCI Object Storage service? Reducing storage costs by automatically moving objects between Standard and Infrequent Access tiers
+- Which OCI service is not designed for use with multiple cloud providers? Oracle Roving Edge Infrastructure
+- In the OCI Block Volume service, which feature enables you to increase the size of a block volume without any downtime? Dynamic Volume Resizing
+- In OCI, what is the main difference between a Load Balancer and a Network Load Balancer? A Load Balancer works at the application layer (layer 7), whereas a Network Load Balancer works at the transport layer (layer 4)
+- Which type of the load balancing policy is supported by the OCI Load Balancer? Weighted Round Robin
+- In OCI, which component is responsible for controlling traffic between subnets within a VCN? Route Tables
+- What is the main advantage of vertical scaling in the OCI Compute service? Enhanced performance with more OCPUs and memory
+- 
