@@ -206,20 +206,44 @@
   
 
 ## Practice Exam
-- Which is NOT a component of an IAM policy statement in OCI? Encryption
-- Why is it important to choose an OCI Region close to your users? To minimise latency and improve application performance
+- In the OCI Object Storage service, which storage tier is designed for rarely or seldom accessed data that can be restored within hours? Archive Storage
+- What does Auto-Tiering mean in OCI Object Storage? It moves data to lower-cost tiers based on access patterns
+- In OCI Networking, what is the role of a Dynamic Routing Gateway (DRG)? To provide a path for traffic between a VCN and an on-prem network or another VCN
+- Which is NOT a type of OCI Compute instance? Nano instances
 - Which protocol is used by the OCI File Storage service for file access? NFS (Network File System)
-- In the OCI Object Storage service, which storage tier is designed for rarely or seldom accessed data that can be restored within hours? One Zone-Infrequent Access
-- Which is a key difference between Security Lists and Network Security Groups in OCI?
-- Which data transfer type is generally free of charge in OCI? Ingress data transfer
+- In OCI, what is the main difference between a Load Balancer and a Network Load Balancer? A Load Balancer works at the application (layer 7), whereas a Network Load Balancer works at the transport layer (layer 4)
+- In OCI, which component of an IAM policy statement defines the user or group the policy applies to? Principal
+- What is the main benefit of using OCI Security Zones for resource management? Enforcing best practice security configurations
 - Which security feature prevents users from making risky or non-compliant changes to OCI resources? OCI Security Zones
-- What is the primary purpose of setting up budgets in OCI? To automatically pause OCI services when spending reaches a certain threshold
-- Which is NOT a type of OCI Compute Instance? Nano instances
+- In OCI, which component is responsible for controlling traffic between subnets within a VCN? Security Lists
+- Which OCI service continuously monitors your cloud resources and configurations to detect, assess, and remediate security risks? Cloud Guard
+- In the OCI Compute service, which feature enables users to migrate running instances between different physical servers? Live Migration
+- What is the main advantage of vertical scaling in the OCI Compute service? Enhanced performance with more OCPUs and memory
+- What is the primary function of a Route Table in OCI Networking Service? To define rules to route traffic from subnets to destinations outside the VCN
+- In the OCI Block Volume service, which feature enables you to increase the size of a block volume without any downtime? Online Resizing
+- Which data transfer type is generally free of charge in OCI? Ingress data transfer
+- Wnich type of OCI networking gateway allows access to Oracle services within the same region without traversing the public internet? Service Gateway
+- Which statement about compartments in the OCI is NOT true? Compartments provide a way to store and manage encryption keys and secrets
+- Which type of scaling is achieved by adding or removing instances within an instance pool in OCI Compute? Horizontal scaling
+- Which statement best describes Autoscaling for OCI Compute? Autoscaling automatically adjusts the number of running instances based on defined metrics
+- How does OCI's Bring Your Own License feature help customers save on costs? By allowing customers to use existing software licenses in OCI
+- What is the primary goal of distributing resources across multiple availability domains in OCI? To improve fault tolerance and high availability
+- What is the term used to describe the combination of an instance's shape, base image, and metadata in the OCI Compute service? Instance Configuration
+- Which is NOT a component of an IAM policy statement in OCI? Encryption
+- What type of storage is associated with instances in the OCI Compute service? Block Storage
+- Which OCI offering allows you to run cloud services in your own data center while maintaining regulatory compliance? OCI Dedicated Region
+- Which is a key difference between Security Lists and Network Security Groups in OCI? Security Lists apply to subnets, whereas Network Security Groups apply to individual instance VNICs
+- In the OCI shared security responsibility model, who is responsible for securing the customer's data, apps and access control? The customer
+- What is the primary purpose of setting up budgets in OCI? To monitor and control spending on OCI services
+- Which OCI service is designed to protect your web apps from various types of malicious attacks such as SQLi and XSS? WAF
+- Which is a key function of a Route Table in a VCN? To direct network traffic to the correct destination
+- Which tool in OCI allows you to visualise and analyse your cloud usage and spending patterns over time? Cost Analyis
+- What is the function of a Dynamic Group in OCI IAM? A group that allows policies to be assigned to compute instances and other OCI resources, instead of users
+- Which type of load balancing policy is supported by OCI Load Balancer? Weighted Round Robin
+- Which is a key characteristic of an OCI Block Volume? It is automatically replicated within an availability domain for high durability
+- Which attribute can be customised when creating an OCI Compute flexible shape instance? Number of OCPUs and amount of memory
 - What is the primary function of the Auto-Tiering feature in the OCI Object Storage service? Reducing storage costs by automatically moving objects between Standard and Infrequent Access tiers
 - Which OCI service is not designed for use with multiple cloud providers? Oracle Roving Edge Infrastructure
-- In the OCI Block Volume service, which feature enables you to increase the size of a block volume without any downtime? Dynamic Volume Resizing
-- In OCI, what is the main difference between a Load Balancer and a Network Load Balancer? A Load Balancer works at the application layer (layer 7), whereas a Network Load Balancer works at the transport layer (layer 4)
-- Which type of the load balancing policy is supported by the OCI Load Balancer? Weighted Round Robin
-- In OCI, which component is responsible for controlling traffic between subnets within a VCN? Route Tables
-- What is the main advantage of vertical scaling in the OCI Compute service? Enhanced performance with more OCPUs and memory
-- 
+- Why is it important to choose an OCI Region close to your users? To minimise latency and improve application performance
+- How are compartment quotas applied in OCI? On a per-compartment basis
+
