@@ -1,16 +1,54 @@
 # OCI AI Foundations
 
 ## AI Foundations
+- AI: Ability of machines to mimic cognitive abilities and problem-solving capabilities of human intelligence
+- Commonly used AI domains: Language, Audio and Speech, Vision
+- Text Data: Inherently sequential (sentences), multiple words (tokenisation), varying sentence lengths (padding) and similar words (dot or cosine similarity and embedding)
+- Language AI Models: Recurrent neural networks, long short-term memory, transformers
+- Audio and Speech as Data: Digitised snapshots in time (sample rate), sampling rate of 44.1kHz (sound reconstructed at 44100 times per sec) and bit depth (number of bits in each of the 44100 audio pieces)
+- Audio and Speech AI Models: Recurrent neural networks, long short-term memory, transformers, variational autoencoders, waveform models, siamese networks
+- Images as Data: Images consists of pixels, pixels are grayscale or color
+- Vision AI Models: Convolutional neural networks, YOLO, generative adversarial network
+- Deep Learning is a subset of Machine Learning, which is in turn a subset of AI
+- ML types: Supervised ML (extracting rules from data), unsupervised ML (extracting trends from data), reinforcement learning (solving tasks by trial and error)
+- DL extracts features and rules from data
+- Neural networks is made up of interconnected nodes or neurons in a layered structure that resembles the human brain
+- Function approximation is a technique for estimating an unknown underlying function using historical observations from the domain
+- Gen AI is a subset of ML that produces content (audio, text, code, video, images)
 
 
 #### Skill Check
+- Which type of ML is used in autonomous car driving? Reinforcement Learning
+- Which task is an example of a speech-related AI task? Speech-to-text Conversion
+- Which task is a Gen AI task? Writing a poem based on a given theme
+- Which is NOT an example of vision or image-related AI task? Repair damaged images
+- Which type of ML algorithms extracts trends from data? Unsupervised ML
 
 
 
 ## Machine Learning Foundations
+- ML is a subset of AI that focuses on creating computer systems that can learn and improve from experience
+- Supervised learning: Classify data or make predictions. Labeled data is used to train the model. Model learns the relation between features and labels
+- Unsupervised learning: Understand relationships within datasets. Labels are not used
+- Reinforcement learning: Make decisions or choices
+- Supervised learning: 2 outputs: regression (continuous) and classification (categorical). Classification can be binary or multi-class
+- Classification: A supervised ML technique used to categorise or assign data points into predefined classes based on their features or attributes
+- Logistic regression predicts if something is true or false instead of predicting something continuous like house prices. Uses an S-shaped curve (sigmoid function) to fit the data to squash numbers between 0 and 1
+- Unsupervised learning: Has no labeled outputs, algorithms learn the patterns in the data and group similar data items
+- Clustering is the grouping of similar data items. Data items are more similar within a cluster than items outside it
+- Similarity is how close two data points are to each other and is a value between 0 and 1
+- Unsupervised learning workflow: Prepare the data (remove missing values, normalise the data and perform feature scaling), create similarity metrics (choose a similarity metric based on nature of data and clustering algorithms used), run clustering algorithm (use the chosen similarity metrics to cluster the data) and interpret results and adjust cleaning (check the quality of your clustering output by verifying against expectations iteratively)
+- Reinforcement learning is a type of ML that enables an agent to learn from its interactions with the environment and receives feedback in the form of rewards or penalties, without any labeled dataset. Used in autonomous vehicles, smart devices, industrial automation and gaming and entertainment
+- RL Terminology: Agent (Interacts with environment, takes actions, learns from feedback), Environment (External system with which the agent interacts), State (Representation of the current situation of the environment at a particular time), Action (Possible moves or decisions that the agent can take in each state) and Policy (Mapping that the agent uses to decide which action to take in a given state)
 
 
 #### Skill Check
+- Which algorithm is used for predicting continuous numerical values? Linear regression
+- Which type of function is used in Logistic Regression to predict a loan defaulter? Sigmoidal function
+- Which type of ML algorithm learns from outcomes to make decisions? Reinforcement learning
+- What type of ML algorithm is used when we want to predict the resale price on a residential property? Regression
+- Which application does NOT require a ML solution? Password validation
+
 
 
 ## Deep Learning Foundations
