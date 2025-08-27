@@ -52,6 +52,11 @@
 
 
 ## Deep Learning Foundations
+- Deep Learning (DL) is a subset of ML that focuses on training Artificial Neural Networks (ANN) with multiple layers and allows them to auto-learn and extract intricate representations from data
+- ML needs us to specify features. DL extracts features from raw and complex data. Internal representation of data is built using extracted features. DL algorithms allow parallel processing of data which leads to better scalability and performance
+- ANN Building Blocks: Layers (Input, hidden, and output layers receive inputs, transform it, and produce output), Neurons (Computational unit from an input and produces an output), Weights (Determines the strength of connection between neurons), Activation Function (Works on the weighted sum of inputs to a neuron and produces an output), Bias (Additional input to a neuron that allows certain degree of flexibility)
+- ANNs are trained using Backpropagation Algorithm (Guess and compare > measure the error > adjust the guess > update the weights > repeat)
+- 
 
 
 #### Skill Check
