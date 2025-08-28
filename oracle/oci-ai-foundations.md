@@ -79,6 +79,14 @@
 
 
 ## Generative AI and LLM Foundations
+- Gen AI: subset of DL where models are trained to generate own output. Learns the underlying patterns in a given data set and uses that knowledge to create new data that shares those patterns
+- Inference: process of getting a new prediction by giving a new data point
+- ML: learns relationship between data and label, output is label
+- Gen AI: learns patterns in unstructured content, output is new content
+- Applications of Gen AI: Image and video generation, creative content generation, data augmentation and synthesis, medical imaging and drug discovery, natural language processing
+- Language Model (LM) is a probabilistic model of text
+- 
+
 
 #### Skill Check
 
