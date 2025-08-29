@@ -52,8 +52,32 @@
 - Syntax for a single condition: variable =|!= value
   - `=|!=` returns true or false for every condition
   - `!=` inverts the result
-- Syntax for multiple conditions
+- Syntax for multiple conditions: `any|all {<condition>,<condition>,...}`. any is logical OR, and is logical AND
+- Permissions granted cumulate as you go from inspect > read > write > manage
+- Tag-Based Access Control allows defining policies with tags that span compartments, groups, and resources. Can scope access based on the tags applied to a resource
+- Network sources controls access based on IP addresses. Create set of defined IP addresses from VCN or public IP addresses, then write policies: `allow group <domain>/<group> to manage <resource> in tenancy where request.networkSource.name='corpnet'`
+- Principal: Identity of caller trying to access/operate on a resource
+- Resource Principal Patterns: Infrastructure (IAM service feature enables instances to be authZ actors to perform actions on service resources - Instance Principal), Stacked (Projecting one principal on top of another, a service controlling a resource, not the infra, specifies the intention of the resource - Oracle Database), Ephemeral (Using injected identifiers, a service defines who the holder of a particular credential is for a short period of time - Oracle Function)
+- Dynamic Groups allows Infra, Stacked and Ephemeral resource principals to be grouped as "principal actors" which are similar to other groups. Policies permit Dynamic Group principals to make API calls against OCI services. Steps: create dynamic groups, define matching rules for memberships, write policies for providing access
+- Too many policies = slower API calls = performance impact. OCI enforces limits on policies/statements. Reduced policies = better scalability
+- Can consolidate group membership for same members. E.g `Allow group NetworkAdminB, NetworkAdminC to manage virtual-network-family in compartment A`. Can also explicitly list required permissions instead of general verbs like `manage`
+- Object IAM enables control at object level within a bucket. Use the IAM policy variable `target.object.name` to define permissions for specific objects or object patterns
 
+
+#### Skill Check
+- When creating a dynamic group in OCI IAM, what defines the membership criteria? Matching rules based on resource type, compartment or OCID
+- How does the "any" keyword function when combining multiple conditions in a policy? At least one condition within the curly braces must be true for the policy to be true
+- What is the primary benefit of using individual permissions instead of verbs such as "manage" in OCI policies? Enhance security by enforcing the principle of least privilege
+- How does a policy reference a network source to control access? By referencing the network source name using request.networkSource.name
+- Tag Based Access Control (TBAC) policies allow you to define conditions based on tags associated with: Both the requesting resource (group/compartment) and the target resource
+
+
+## Networking VCN
+- 
+
+
+#### Skill Check
+- 
 
 
 
