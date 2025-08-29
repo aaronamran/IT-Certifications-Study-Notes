@@ -40,7 +40,7 @@ Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Pos
    - [Oracle Analytics Cloud]()
    - [Oracle AI Vector Search]()
 4. AI
-   - [OCI AI Foundations]()
+   - [OCI AI Foundations](https://github.com/aaronamran/IT-Certifications-Study-Notes/blob/main/oracle/oci-ai-foundations.md)
    - [OCI Generative AI]()
    - [Oracle AI Vector Search]()
    - [OCI Data Science]()
