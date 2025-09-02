@@ -182,7 +182,7 @@
 
 ## Practice Exam
 - T-Few fine-tuning in OCI Gen AI Service reduces cost and training time as compared to traditional fine-tuning. Which statement correctly explains the reason behind it? It selectively updates only a fraction of the model's weights
-- Mark is analysing customer receipts and wants to automatically find and save details such as merchant name, transaction date, and total amoount for record-keeping. Which OCI Vision feature should he use? Key-value extraction
+- Mark is analysing customer receipts and wants to automatically find and save details such as merchant name, transaction date, and total amount for record-keeping. Which OCI Vision feature should he use? Key-value extraction
 - A streaming service wants to recommend TV shows based on user behavior. Which ML approach should be used? Supervised Learning
 - What is the purpose of the hidden layer in an artificial neural network? This layer is optional, and it processes and transforms inputs from the network's weights and activation functions
 - What is the purpose of the Model Catalog in OCI Data Science? It serves as a repository for storing, tracking, and managing ML models
