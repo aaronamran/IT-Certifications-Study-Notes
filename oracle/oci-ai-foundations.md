@@ -120,7 +120,7 @@
 - OCI AI Services: Language (Pretrained Models, Custom Models, Text Translation), Vision (Image Analysis Pretrained Model/Custom Model), Speech (Transcription), Document Understanding (OCR, Text Extraction, Key Value Extraction, Table Extraction, Document Classification), Digital Assistant
 - OCI Data Science: Cloud service focused on serving data scientists throughout the full ML life cycle with support for Python and open-source libraries
 - OCI Data Science Core Principles: Accelerated, Collaborative, Enterprise-grade
-- Projects are containers that enables data science teams to organise their work and are collaborative workspaces. Tenancy can as have many projects as needed without limits
+- Projects are containers that enables data science teams to organise their work and are collaborative workspaces. Tenancy can have as many projects as needed without limits
 - GPU performs simple operations very rapidly and allows parallel computing for higher throughput
 - Remote Direct Memory Access (RDMA): data transfer/network communication from one machine to another that bypasses CPU. Low latency, high bandwidth
 - RDMA over Converged Ethernet (ROCE): OCI's Ethernet fabric that powers HPC, GPU and DB workloads
