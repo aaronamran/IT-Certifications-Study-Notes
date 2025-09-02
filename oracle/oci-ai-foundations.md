@@ -190,7 +190,7 @@
 - You're developing an image classification software that can identify specific objects. Which AI subset would you use? Deep Learning
 - What is the primary limitation of Recurrent Neural Networks when processing long sequences? RNNs struggle with long-range dependencies due to the vanishing gradient problem
 - What role do tokens play in LLMs? They are individual units into which a piece of text is divided during processing by the model
-- You need a suitable GPU for massive scale (HPC) AI training and inference workloads. Which NVIDIA GPU you are most likely to choose? GB200
+- You need a suitable GPU for massive scale (HPC) AI training and inference workloads. Which NVIDIA GPU are you most likely to choose? GB200
 - You are writing poems. You need your computer to help you complete your lines by suggesting right words. Which deep learning model is best suited for this task? RNN
 - David is transcribing a customer support call using OCI Speech. The call contains some profane language, and he wants to retain the original words but mark them as inappropriate rather than discarding them. Which profanity filtering option should David use? Tagging
 - How does Oracle DB 23ai allow the use of pretrained AI models for vector search? By loading ONNX models directly into the db
