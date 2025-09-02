@@ -91,11 +91,27 @@
 - Transformers can look at all the words in the sentence at the same time and understand how they relate to each other
 - Attention Mechanism adds context to the text. Encoder processes input and encodes it into embeddings, decoder generates output
 - LM understands tokens rather than words
-- Embeddings are numerical representations of a piece of text converted to number sequences
-- 
+- Embeddings are numerical representations of a piece of text converted to number sequences, which makes it easy for computers to understand relationships between pieces of text
+- Embeddings use case (RAG): User's question is encoded as a vector and sent to a Vector DB. Vector DB finds private content that closely match the user's question. The content is sent to the LLM to help answer the user's question. LLM uses the content plus general knowledge to provide an informed answer
+- Transformer model types: Encoder only (Semantic search), Decoder only (Text Generation), Encoder-Decoder (Machine Translation)
+- Prompt Engineering: Process of iteratively refining a prompt for the purpose of eliciting a particular style of response
+- Aligning LLMs to follow instructions: Completion LLMs are trained to predict the next word on a large dataset of internet text, rather than to safely perform the language task that the user wants. You cannot give instructions or ask questions to a completion LLM, instead need to formulate your input as a prompt. Instruction tuning is a critical step in LLM alignment, it involves fine-tuning a pre-trained LLM on a varied set of instructions, each paired with a desired output
+- In-context learning: conditioning (prompting) an LLM with instructions and or demonstrations of the task it is meant to complete
+- K-shot prompting: explicitly providing K examples of the intended task in the prompt
+- Few-shot prompting is believed to improve results over 0-shot prompting
+- Chain-of-thought prompting: provide examples in a prompt to show responses that include a reasoning step
+- RAG: Language model can query enterprise knowledge bases to provide grounded responses, does not require fine tuning
+- LLM Fine-tuning by taking a pretrained foundational model and providing additional training using custom data. Inference is model taking a new text as input and generates output text based on what it has learned during pretraining and fine-tuning
+- Fine-tuning a pretrained model: Optimise a model on a smaller domain-specific dataset. Recommended when a pretrained model doesn't perform your task well or when you want to teach it something new
 
 
 #### Skill Check
+- What aspect of LLM significantly impacts their capabilities, performance, and resource requirements? Model size and parameters, including the number of tokens and weights
+- Sequence models are used to solve problems involving sequentially ordered data points or events. Which is NOT the best use case for sequence models? Image classification and object recognition
+- Fine-tuning is unnecessary for LLM if your application does not involve which specific aspect? Task specific adaptation
+- What is "in-context learning" in the context of LLMs? Providing a few examples of a target task via the input prompt
+- Which statement accurately describes generative AI? Creates new content without making predictions
+
 
 
 ## OCI AI Portfolio
