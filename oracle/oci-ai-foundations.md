@@ -115,13 +115,40 @@
 
 
 ## OCI AI Portfolio
+- Oracle AI Stack: Business Apps, Oracle SaaS Portfolio: OCI Gen AI, Digital Assistant, Speech, Language, Vision, Document Understanding. ML Services: OCI Data Science, ML in Oracle DB, Data Labelling. AI Infrastructure: Compute Bare Metal Instances and VMs, Cluster Networking, Block, Object, and File Storage, HPC, Filesystems
+- Ways to access OCI AI Services: OCI Console, REST API, Language SDKs, CLI
+- OCI AI Services: Language (Pretrained Models, Custom Models, Text Translation), Vision (Image Analysis Pretrained Model/Custom Model), Speech (Transcription), Document Understanding (OCR, Text Extraction, Key Value Extraction, Table Extraction, Document Classification), Digital Assistant
+- OCI Data Science: Cloud service focused on serving data scientists throughout the full ML life cycle with support for Python and open-source libraries
+- OCI Data Science Core Principles: Accelerated, Collaborative, Enterprise-grade
+- Projects are containers that enables data science teams to organise their work and are collaborative workspaces. Tenancy can as have many projects as needed without limits
+- GPU performs simple operations very rapidly and allows parallel computing for higher throughput
+- Remote Direct Memory Access (RDMA): data transfer/network communication from one machine to another that bypasses CPU. Low latency, high bandwidth
+- RDMA over Converged Ethernet (ROCE): OCI's Ethernet fabric that powers HPC, GPU and DB workloads
+- RDMA Supercluster: Designed to scale to tens of thousands of GPUs. Fabric uses a three-tier Clos topology (non-blocking interconnect). Latency within a block (6.5 µs round trip) and across blocks (20 µs round trip). Uses lossless networking (no dropped packets) and uses intelligent congestion control and switch buffering tuned for higher latency paths
+- AI Ethics Principles: Respect for human autonomy (Human centric and allow human oversight), Prevention of harm (technical robustness and safety, privacy and data governance), fairness (transparency, diversity, nondiscrimination, fairness)
+
 
 #### Skill Check
+- Which OCI Data Science feature enables you to define and run repeatable ML tasks on fully manageed infra? Jobs
+- Which data type is used in Oracle DB 23ai to compare documents? Vector
+- Which OCI Data Science feature allows you to use catalogued models as HTTP endpoints on fully managed infra? Model Deployments
+- Which is NOT an OCI AI service? Translator
+- What is the advantage of using OCI Superclusters for AI workloads? Deliver exceptional performance and scalability for complex AI tasks
+
 
 
 ## OCI Generative AI Service
+- Fully managed service that provides set of customisable LLMs available via a single API to build gen AI apps. Have models such as Meta and Cohere. Flexible fine-tuning using own dataset and has dedicated AI clusters
+- Pretrained Foundational Models: Chat (ask questions and get conversational responses) and Embedding (convert text to vector embeddings semantic search)
+- Oracle DB 23ai: SQL support for vector generation, Vector data type, similarity search with SQL syntax and functions, approximate search indexes
+- Vector Distance Function: to gauge similarity, distance between 2 vectors is smaller for entries that are more similar
+- Select AI: query data directly using any language. Translates natural language into Oracle SQL language
+
 
 #### Skill Check
+- 
+
+
 
 
 ## OCI AI Services
