@@ -220,7 +220,7 @@
 - Emma works for a media company that produces video content for online platforms. She needs to add close captions to their videos for accessibility. Which OCI Speech feature should Emma use? SRT file support
 - John has successfully trained a ML model using OCI. He now needs to deploy it for real-time predictions where it can process user inputs and generate responses. Which OCI service should he use for deployment? OCI Data Science
 - You are working on a deep learning project to generate music. Which type of neural network is best suited for this task? RNN
-- What is the primary goal of fine-tuning a LLM? To adjust the pretrained model's paramters using a smaller, task-specific dataset, improving its performance on specific tasks
+- What is the primary goal of fine-tuning a LLM? To adjust the pretrained model's parameters using a smaller, task-specific dataset, improving its performance on specific tasks
 
 
 
