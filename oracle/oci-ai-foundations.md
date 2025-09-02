@@ -169,3 +169,60 @@
 - Which OCI AI service is used to extract tabular content from documents? Vision
 
 
+
+## Sample Exam Questions
+- Which AI domain is associated with tasks like identifying the sentiment of a text and translating text between languages? Natural Language Processing
+- In ML, what does the term "Model training" involve? Establishing a relationship between input and output parameters
+- What is the primary purpose of deep learning model architectures like CNN? Detecting patterns in images
+- What is the primary distinction between Gen AI and other AI approaches like supervised learning? Gen AI aims to understand underlying data distribution & create new examples
+- What is the advantage of using OCI Superclusters for AI workloads? They deliver exceptional performance and scalability for complex AI tasks
+- What is "in-context learning" in the context of LLM? Providing a few examples of a target task via the input prompt
+- Which is a feature offered by the OCI Speech service? Transcribing spoken language into written text
+
+
+## Practice Exam
+- T-Few fine-tuning in OCI Gen AI Service reduces cost and training time as compared to traditional fine-tuning. Which statement correctly explains the reason behind it? It selectively updates only a fraction of the model's weights
+- Mark is analysing customer receipts and wants to automatically find and save details such as merchant name, transaction date, and total amoount for record-keeping. Which OCI Vision feature should he use? Key-value extraction
+- A streaming service wants to recommend TV shows based on user behavior. Which ML approach should be used? Supervised Learning
+- What is the purpose of the hidden layer in an artificial neural network? This layer is optional, and it processes and transforms inputs from the network's weights and activation functions
+- What is the purpose of the Model Catalog in OCI Data Science? It serves as a repository for storing, tracking, and managing ML models
+- You are training a deep learning model to predict stock prices. What type of data is this an example of? Time series data
+- You're developing an image classification software that can identify specific objects. Which AI subset would you use? Deep Learning
+- What is the primary limitation of Recurrent Neural Networks when processing long sequences? RNNs struggle with long-range dependencies due to the vanishing gradient problem
+- What role do tokens play in LLMs? They are individual units into which a piece of text is divided during processing by the model
+- You need a suitable GPU for massive scale (HPC) AI training and inference workloads. Which NVIDIA GPU you are most likely to choose? GB200
+- You are writing poems. You need your computer to help you complete your lines by suggesting right words. Which deep learning model is best suited for this task? RNN
+- David is transcribing a customer support call using OCI Speech. The call contains some profane language, and he wants to retain the original words but mark them as inappropriate rather than discarding them. Which profanity filtering option should David use? Tagging
+- How does Oracle DB 23ai allow the use of pretrained AI models for vector search? By loading ONNX models directly into the db
+- A company wants to automate its email filtering system to reduce spam. Which AI technique would you recommend? Machine Learning
+- What type of data is most likely to be used with deep learning algorithms? Complex data with non-human interpretable features
+- How does Select AI generate SQL queries from natural language questions? It connects to an LLM, infers the query intent, and formulates the SQL
+- Which OCI Vision feature is useful for identifying whether a document is an invoice, receipt, or resume based on its appearance and keywords? Document classification
+- You are training a deep learning model to recognise faces. What type of neural network is best suited for this task? CNN
+- Which statement best describes the pretraining process of a Gen AI model? It learns patterns in unstructured data without requiring labeled training data
+- Which statement best describes the primary difference between LLM and traditional ML models? LLMs are pretrained on a large text corpus whereas ML models need to be trained on custom data
+- How does Select AI enhance the interaction with Oracle Autonomous DB? By enabling natural language prompts instead of SQL code
+- What technique is used to predict the price of a house based on its features? Regression
+- How does normalisation improve the readability of transcriptions in OCI Speech? It converts elements like numbers, dates, and URLs into standard readable formats
+- What is the primary function of the inference process in ML? Predicting outcomes from new data points
+- A self-driving car needs to detect pedestrians and make safe lane changes. Which AI concept is being applied here? AI
+- Which algorithm is a non-parametric approach for supervised learning? K-Nearest Neighbours (KNN)
+- What is the role of a target variable in supervised learning? It contains the desired output or class labels
+- Which of these summarises the 3 guiding principles for AI to be trustworthy? AI should be lawful, ethical and robust
+- Which technique involves providing explicit examples in a prompt to guide an LLM's response? Few-shot prompting
+- Lisa runs an automated security system that monitors parking lots using cameras. She wants to locate and label vehicles and license plates in each frame. Which OCI Vision should she use? Object detection
+- John needs to analyse the accuracy of OCI Speech transcriptions for a legal case. He wants to evaluate how sure the model is about each word in the transcription. Which feature should he use? Confidence scoring
+- Which of these is NOT a common application of unsupervised ML? Spam detection
+- Which of these components is NOT a part of OCI AI infrastructure? OCI Vault
+- You need a suitable GPU for small or medium scale AI training and inference workloads. Which NVIDIA GPU you are most likely to choose? A100
+- What is the role of the loss function in supervised learning algorithms? It quantifies the cost of incorrect predictions
+- John works in news aggregation platform and wants to automatically categorise articles into topics like "Politics", "Technology", and "Sports". Which feature of OCI Language would help him? Text classification
+- Emma works for a media company that produces video content for online platforms. She needs to add close captions to their videos for accessibility. Which OCI Speech feature should Emma use? SRT file support
+- John has successfully trained a ML model using OCI. He now needs to deploy it for real-time predictions where it can process user inputs and generate responses. Which OCI service should he use for deployment? OCI Data Science
+- You are working on a deep learning project to generate music. Which type of neural network is best suited for this task? RNN
+- What is the primary goal of fine-tuning a LLM? To adjust the pretrained model's paramters using a smaller, task-specific dataset, improving its performance on specific tasks
+
+
+
+
+
