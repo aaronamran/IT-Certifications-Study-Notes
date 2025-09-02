@@ -85,7 +85,7 @@
 - Gen AI: learns patterns in unstructured content, output is new content
 - Applications of Gen AI: Image and video generation, creative content generation, data augmentation and synthesis, medical imaging and drug discovery, natural language processing
 - Language Model (LM) is a probabilistic model of text
-- Parameters: Adjustable weights in the model's neural network. More paramters = more capacity = can fit a more complex set of patterns in the data it was trained on
+- Parameters: Adjustable weights in the model's neural network. More parameters = more capacity = can fit a more complex set of patterns in the data it was trained on
 - Model size: Memory required to store the model's parameters. Too large parameters can make model overfit on training data
 - RNN handles sequential data, allows information to persist using a feedback loop and maintains a hidden state or memory and captures dependencies
 - Transformers can look at all the words in the sentence at the same time and understand how they relate to each other
