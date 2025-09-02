@@ -146,8 +146,11 @@
 
 
 #### Skill Check
-- 
-
+- What is the primary purpose of the OCI Playground in Gen AI? To visually explore and test pre-trained and fine-tuned models without writing code
+- What is the purpose of model endpoints in OCI Gen AI? To host and serve fine-tuned models for inference
+- How do chat models in OCI Gen AI differ from embedding models? Chat models generate text, while embedding models convert text into numerical representations
+- Your company wants to fine-tune a pre-trained LLM to better respond to customer queries related to travel bookings. What resource is required in OCI for this fine-tuning? Dedicated AI Cluster
+- Which key feature allows AI Vector Search to store embeddings in Oracle DB 23ai? VECTOR datatype
 
 
 
