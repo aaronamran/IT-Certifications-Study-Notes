@@ -155,8 +155,17 @@
 
 
 ## OCI AI Services
+- OCI Language: Pretrained models trained on industry data to perform language analysis with no data science expertise needed
+- Detects text language, identifies entities in text, sentiment for each text aspect, and key phrases that represents important ideas or subjects
+- OCI Speech: Transcribes audio and video files using deep learning techniques, no data science expertise required, processes data directly in object storage, generates timestamped, accurate transcriptions
+- OCI Vision: Detects objects inside image using bounding box, image classification using labelling
+- Document AI for document understanding: Text recognition, document classification, language detection, table extraction, key value extraction
+
 
 #### Skill Check
-
+- Which capability of OCI Vision service uses a bounding box inside an image? Object Detection
+- Which capability is offered by the OCI Language service? Text Sentiment Analysis
+- Which language is NOT supported by the OCI Speech service? Mandarin
+- Which OCI AI service is used to extract tabular content from documents? Vision
 
 
