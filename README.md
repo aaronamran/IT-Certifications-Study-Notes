@@ -1,7 +1,8 @@
 # IT Certifications Study Notes
 Repository to store concise study notes for IT certifications. Hey, if this repo is useful for you, glad to hear!
 
-## Microsoft Certifications Domains
+<details> 
+<summary><h2>Microsoft Certifications Domains</h2></summary>
 
 Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Poster-en-us.pdf](https://arch-center.azureedge.net/Credentials/Certification-Poster-en-us.pdf)
 
@@ -17,8 +18,12 @@ Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Pos
 6. Security
    - SC-900 | Security, Compliance and Identity Fundamentals
 
+</details>
 
-## Oracle Certifications Domains
+
+<details> 
+<summary><h2>Oracle Certifications Domains</h2></summary>
+   
 1. Oracle Cloud Infrastructure (OCI)
    - [OCI Foundations](https://github.com/aaronamran/IT-Certifications-Study-Notes/blob/main/oracle/oci-foundations.md)
    - [OCI Architect]()
@@ -44,3 +49,15 @@ Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Pos
    - [OCI Generative AI]()
    - [Oracle AI Vector Search]()
    - [OCI Data Science]()
+
+</details>
+
+<details> 
+<summary><h2>Juniper Certifications</h2></summary>
+
+</details>
+
+<details> 
+<summary><h2>Aviatrix Certifications</h2></summary>
+
+</details>
