@@ -55,6 +55,10 @@ Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Pos
 <details> 
 <summary><h2>Juniper Certifications</h2></summary>
 
+
+1. Associate
+   - [JNCIA-Junos]()
+
 </details>
 
 <details> 
