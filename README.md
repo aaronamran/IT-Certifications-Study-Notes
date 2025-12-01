@@ -57,11 +57,13 @@ Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Pos
 
 
 1. Associate
-   - [JNCIA-Junos]()
+   - [JNCIA-Junos](https://github.com/aaronamran/IT-Certifications-Study-Notes/blob/main/juniper/jncia-junos.md)
 
 </details>
 
 <details> 
 <summary><h2>Aviatrix Certifications</h2></summary>
+
+- [Aviatrix ACE Multicloud Network Associate](https://github.com/aaronamran/IT-Certifications-Study-Notes/blob/main/aviatrix/aviatrix-ace-associate.md)
 
 </details>
