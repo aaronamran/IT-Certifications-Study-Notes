@@ -2,6 +2,7 @@
 
 <detail> 
 <summary>Identify the Characteristics of On-Premises Data Centers vs. Cloud</summary>
+  
 - On-premises data centers:
   - Physically located within an organization's premises, are fully owned, operated, and maintained by the organization, encompassing all hardware, software, and networking equipment
   - Maintain full control over the infrastructure, encompassing servers, storage, networking devices, and security systems, allowing for customization and configuration tailored to their specific needs and preferences
