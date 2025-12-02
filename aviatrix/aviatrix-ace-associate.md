@@ -1,7 +1,7 @@
 # Aviatrix ACE Multicloud Network Associate
 
 <details> 
-<summary>Identify the Characteristics of On-Premises Data Centers vs. Cloud</summary>
+<summary><h2>Identify the Characteristics of On-Premises Data Centers vs. Cloud</h2></summary>
   
 - On-premises data centers:
   - Physically located within an organization's premises, are fully owned, operated, and maintained by the organization, encompassing all hardware, software, and networking equipment
