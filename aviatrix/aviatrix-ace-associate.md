@@ -39,5 +39,16 @@
 <details> 
 <summary><h2>Outline the Importance of Edge Computing, Hybrid Cloud and Multicloud</h2></summary>
 
+- Public Cloud: Serves as the cornerstone of this ecosystem, offering an array of networking and security services to support crucial business workloads hosted within its infrastructure. Despite the public cloud's many advantages, certain business use cases demand direct connectivity to on-premises resources
+- On-Premises Resources: These include existing data centers, legacy branch offices, SD-WAN branches, colocation facilities (colo), and IoT devices (sensors and devices that collect data and communicate with the cloud for real-time insights and automation). These resources can connect securely to the public cloud using various connectivity methods. All these resources combined are categorized as Edge resources as well. On-Prem resources are important due to compliance (Federal requirements and GDPR regulations) and legacy systems (integration with existing on-prem systems for certain businesses)
+- End User Devices: End User Devices refer to the array of devices used by individuals, including employees, contractors, developers, and others. These devices encompass laptops, desktops, tablets, and smartphones, serving as the interface through which end users access and interact with cloud resources
+
+</details>
+
+<details> 
+<summary><h2>Examine the Design Considerations and Tradeoffs For Moving to Public Cloud</h2></summary>
+
+- Business Pain: Compliance and governance concerns, DR/BC for CSP availability, hybrid cloud connectivity costs, consumption-based bill back/show back
+- Technical Pain: Performance vs Security tradeoff, advanced routing controls, security and segmentation requirements, complex setup and troubleshooting
 
 </details>
