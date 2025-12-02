@@ -1,6 +1,6 @@
 # Aviatrix ACE Multicloud Network Associate
 
-<detail> 
+<details> 
 <summary>Identify the Characteristics of On-Premises Data Centers vs. Cloud</summary>
   
 - On-premises data centers:
@@ -18,7 +18,7 @@
   - Cloud service providers (CSPs) provide security as a shared security model. The cloud shared security model divides security responsibilities between the cloud service provider (CSP) and the customer, varying based on the service model (IaaS, PaaS, SaaS). CSPs are responsible for securing the cloud infrastructure and platform, while customers are tasked with securing their data, applications, and access management. This collaborative approach ensures both the infrastructure and the data it hosts are comprehensively protected against cyber threats
   - Cloud Service Providers (CSPs) provide maintenance and support by regularly updating and patching infrastructure and platforms to ensure the security and performance of the underlay infrastructure they own. They also offer customer service and technical support to address issues, provide guidance, and ensure optimal service utilization. This proactive approach helps minimize downtime and enhance the overall user experience. Users/customers, on their part, are responsible for managing their data, implementing security measures like encryption, and controlling access to their applications and services. This partnership ensures a smooth, secure cloud experience with minimized downtime and enhanced security
 
-</detail>
+</details>
 
 - 
 
