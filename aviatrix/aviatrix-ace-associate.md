@@ -221,4 +221,18 @@ Credits to [Azure Networking Limitations and Constraints by Shahzad Ali on netJo
 
 </details>
 
+<details> 
+<summary><h2>GCP Networking 101, Limitations and Design Considerations</h2></summary>
 
+- GCP Global VPC: Offers a unique networking solution not found in AWS or Azure. This global virtual network covers all regions worldwide, providing a single VPC for an entire organization, segmented within projects. With this approach, enterprises can utilize a single VPC to connect multiple regions without relying on the public internet for communication
+- Unlike other CSPs, in GCP, a Virtual Machine (VM) is allowed to have only one interface for each VPC network that it connects to. Multi-NIC virtual machines can have a maximum of 8 interfaces. This means that a VM can connect to a maximum of 8 VPCs
+- In AWS and Azure, when you deploy a virtual machine and you have multiple network interfaces (NICs), they can all sit in the same VPC or VNET. In GCP, that's not possible. And this is a drawback of a global VPC. If you have a virtual machine with 2 NICs or 3 NICs, every single NIC must be part of a different VPC. And in case of GCP, they have a maximum 8 interface limit. So you can have one virtual machine with 8 interfaces max and one VPC connected to it
+
+
+#### Questions
+1. According to the GCP VPC design documentation. what is a key recommendation for companies that deal with sensitive data? For companies that deal with compliance initiatives, sensitive data, or highly regulated data that is bound by compliance standards such as HIPAA or PCI-DSS, further security measures often make sense. 
+   > To improve security, isolate each environments into its own VPC network or regional VPC instead of Global VPC.
+2. What is a key security consideration when utilizing Google Cloud Interconnect, particularly when it is used to facilitate connectivity to on-premises infrastructure or other hybrid cloud colocations? 
+   > Since Google Cloud Interconnect is not end-to-end encrypted, one must use high performance IPSec encryption to protect data in transit
+
+</details>
