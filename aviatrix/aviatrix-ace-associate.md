@@ -167,3 +167,55 @@
 2. What is a key consideration when attaching Virtual Private Clouds (VPCs) to an AWS Transit Gateway (TGW), particularly when facilitating connectivity to on-premises infrastructure? The necessity to budget for data processing and VPC attachment costs associated with AWS TGW
 
 </details>
+
+<details> 
+<summary><h2>Azure Networking 101, Limitations and Design Considerations</h2></summary>
+
+- Microsoft Azure Virtual WAN (vWAN): Networking service that combines many networking, security, and routing functionalities to provide a single operational interface. The Virtual WAN architecture is a hub and spoke architecture for branches (VPN/SD-WAN devices), users (Azure VPN/OpenVPN/IKEv2 clients), ExpressRoute circuits, and virtual networks (VNETs). It enables a transit network architecture where the cloud-hosted network 'hub' enables transitive connectivity between endpoints that might be distributed across different types of 'spokes'
+
+<br />
+
+- Azure Route Server vs. Aviatrix: Feature Comparison
+
+  | Feature | Azure Route Server (ARS) Limit | Aviatrix (Control/Data Plane) |
+  | :--- | :--- | :--- |
+  | **Control & Data Plane** | Control Plane Only: Does not forward data traffic; operates strictly in the control plane. | Full Plane: Has both control and data plane (forwards data traffic). |
+  | **BGP Protocol Support** | Supports only Border Gateway Protocol (BGP). NVA must support multi-hop external BGP and be deployed in a dedicated subnet. | Supports both BGP and static routes. No subnet restrictions; has multiple interfaces and connections to NVAs. |
+  | **ASN Handling** | Stripped: Private BGP ASN information is stripped when ExpressRoute advertises routes to on-premises. On-premises network receives the prefix with AS 12076. | Preserved: Does not strip BGP ASN information; advertises the whole path. |
+  | **Data Traffic Routing** | Does not route any data traffic directly between NVAs and VMs. | Provides both control and data plane functionality (routes data traffic). |
+  | **16/32 Bit ASN Support**| Supports only 16-bit (2 bytes) ASNs. | Supports both 16-bit (2 bytes) and 32-bit (4 bytes) ASNs. |
+  | **Route Advertisement & HA**| Restricted: Requires each NVA instance to be peered with both instances of the Route Server for route advertisement and High Availability (HA). | Flexible: No such limitations; offers flexible design options. |
+  | **Number of BGP Peers** | 8 | No limitation |
+  | **Routes per BGP Peer** | 1,000 (Exceeding this number terminates the session). | No limitation |
+  | **VMs in Virtual Network** | 4,000 (Including peered VNets). | No limitation |
+  | **Virtual Networks Supported**| 500 | No limitation |
+  | **Total Prefixes Supported** | 10,000 (On-premises and Azure VNets). | No limitation |
+  
+- Azure ExpressRoute vs. Aviatrix: Networking Feature Comparison
+
+  | Feature | Azure ExpressRoute Details/Limit | Aviatrix Advantage |
+  | :--- | :--- | :--- |
+  | **IPv4 Prefix Limit** | Maximum of 1,000 IPv4 prefixes advertised on a single connection. | No prefix limit. Aviatrix overlay has no such limitations. |
+  | **Prefix Limit Exceeding Consequences** | Exceeding the prefix limit disconnects the circuit and gateway connection, including peered VNets using gateway transit. Connectivity is restored once the prefix limit is corrected. | No such issues with Aviatrix. |
+  | **Route Capacity** | Supports up to 11,000 routes across virtual networks. | No maximum route limit. |
+  | **On-Premise Route Filtering** | Filtering or including routes must be performed on the on-premises edge router. User-defined routes (UDRs) in Azure VNets are static and do not adjust dynamically with BGP announcements, requiring careful planning and programming UDRs in each VNet. | Provides route filtering option to stop unwanted routes. Routing is dynamic and does not require static UDRs to adjust to BGP announcements. |
+  | **Traffic Collection and Handling** | Traffic Collector samples at a rate of 1:4096 and handles a maximum of 300,000 flows per minute. Additional flows beyond this limit are dropped. | Sampling rate is 1:1, offering more comprehensive traffic analysis. |
+
+- Azure vWAN vs. Aviatrix: Advanced Networking Comparison
+
+  | Limitation | Azure vWAN Details | Aviatrix Advantage |
+  | :--- | :--- | :--- |
+  | **Network Address Translation (NAT) Support** | Does not offer native NAT capabilities, limiting modifications to network address information in packet headers, crucial for certain configurations and security policies. | Aviatrix provides robust NAT functionality, allowing fine-grained control over address translation for both inbound and outbound traffic, thereby enhancing security and network management flexibility. |
+  | **Multi-Cloud Connectivity** | Primarily designed to operate within the Azure ecosystem, lacking capabilities to manage and connect resources across different cloud providers. | Aviatrix excels in multi-cloud networking, enabling seamless integration and consistent network policies across various public cloud platforms. This is critical for enterprises adopting a multi-cloud strategy to avoid vendor lock-in and leverage the best services from different providers. |
+  | **Operational Visibility and Troubleshooting** | Offers basic monitoring and management tools, but limited operational visibility and troubleshooting capabilities. | Aviatrix provides comprehensive operational visibility, with robust monitoring, analytics, and troubleshooting tools. These features facilitate proactive network management and rapid issue resolution, ensuring high availability and performance. |
+  | **Centralized Policy Management** | Policy management is primarily scoped within the Azure environment, potentially lacking the level of centralized and granular control needed for complex, hybrid, or multi-cloud architectures. | Aviatrix delivers centralized policy management across multi-cloud environments, ensuring consistent security and network policies while simplifying administrative overhead. |
+  | **Firewall Sharing Limitations** | Azure vWAN does not permit sharing of firewalls between protected hubs, requiring each Virtual Hub to have its own dedicated firewall instance. This increases complexity and administrative overhead. | Aviatrix FireNet enables centralized and streamlined firewall deployment and management, permitting the sharing of firewall resources across multiple regions within the same cloud or across multi-cloud environments. This reduces the need for redundant firewall instances, simplifies network architecture, and enhances resource efficiency. |
+  | **Advanced Security Features** | Integrated with Azure Firewall, but may not suffice for complex security requirements in multi-cloud or hybrid environments. | Aviatrix offers advanced security features, including end-to-end encryption, secure segmentation, and advanced threat detection. These are essential for maintaining a robust security posture across diverse cloud infrastructures. |
+
+#### Questions
+1. What is a key throughput limitation when attaching Azure Virtual WAN (vWAN) to on-premise data center? Azure IPSec encryption throughput is only limited to 1.25Gbps on a 10Gbps Express Route Circuit
+2. What is a key consideration when utilizing Microsoft Azure Virtual WAN, particularly when it is used to facilitate connectivity to on-premises infrastructure or other Virtual Hubs? The need to summarize BGP routes to comply with Azure limits  
+
+</details>
+
+
