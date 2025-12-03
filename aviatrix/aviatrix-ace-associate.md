@@ -174,6 +174,8 @@
 - Microsoft Azure Virtual WAN (vWAN): Networking service that combines many networking, security, and routing functionalities to provide a single operational interface. The Virtual WAN architecture is a hub and spoke architecture for branches (VPN/SD-WAN devices), users (Azure VPN/OpenVPN/IKEv2 clients), ExpressRoute circuits, and virtual networks (VNETs). It enables a transit network architecture where the cloud-hosted network 'hub' enables transitive connectivity between endpoints that might be distributed across different types of 'spokes'
 
 <br />
+Credits to [Azure Networking Limitations and Constraints by Shahzad Ali on netJoints](https://netjoints.com/azure-networking-limitations-and-constraints/)
+
 
 - Azure Route Server vs. Aviatrix: Feature Comparison
 
