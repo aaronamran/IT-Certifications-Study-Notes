@@ -387,5 +387,94 @@ Credits to [Azure Networking Limitations and Constraints by Shahzad Ali on netJo
 2. What immediate effect would the failure of a Next Generation Firewall (NGFW) have on Application VPCs?
    > Traffic between the Application VPCs is no longer inspected, impacting security
 
+</details>
+
+<details> 
+<summary><h2>Harness Aviatrix for Simplified Cloud Networking</h2></summary>
+
+- Centralized Control, Orchestration, and Automation Plane: Aviatrix Controller
+  - Aviatrix Controller acts as the central hub or brain of our Multicloud Network Architecture (MCNA), using its control plane logic to seamlessly manage cloud and multicloud networks
+  - Encompasses three important roles:
+    - It functions as a Centralized Control Plane by filling up the routing tables of the Aviatrix Gateways
+    - It acts as a Centralized Orchestration Plane by orchestrating, for instance, an Application Load Balancer in front of a fleet of Aviatrix VPN Gateways
+    - It serves as a Centralized Automation Plane by ingesting any Terraform manifests
+
+- Centralized Management and Operations Plane: Aviatrix CoPilot
+  - Provides a comprehensive operational view of your cloud network, crucial for supporting business-critical cloud networking operations. CoPilot empowers enterprises to implement intelligent cloud networking by embedding robust security features alongside advanced monitoring and diagnostic tools that bolster application availability.
+  - Dynamic Multicloud Topology Mapping
+  - Realtime and Historical NetFlow Analytics
+  - Realtime and Historical NetFlow Geolocation
+  - Automated Threat Detection and Mitigation
+- Distributed Data Plane: Aviatrix Gateways
+  - Constructing secure overlay network that seamlessly integrates with underlying CSP
+
+- Architectural Foundations of MCNA
+  - 3-tier architecture: Application (Spoke) Layer, Transit Core Backbone Layer, Access Layer
+
+- Network Segmentation with Aviatrix
+  - Provides detailed, granular control, facilitating the precise separation of resources across cloud, multicloud, and on-premise environments
+
+- Secure Egress with Aviatrix: Aviatrix Secure Egress Control
+  - Stringent, policy-based zero trust model that rigorously ensures only authorized traffic to approved Fully Qualified Domain Names (FQDNs) and URLs can access your network
+
+- High-Performance Encryption (HPE)
+  - Ensures secure line rate communication for your critical infrastructure, supporting well above 50 Gbps for cloud-to-cloud or internal cloud communication.
+  - Unlike standard IPSec tunnels, HPE achieves line-rate performance without sacrificing security
+ 
+- Aviatrix Distributed Cloud Firewall (DCF)
+  - Through network micro-segmentation, you gain precise control over access to network resources and applications
+
+- Aviatrix ActiveMesh
+  - IPSec encrypted overlay technology, where all the gateways forward packets in Active/Active mode
+  - Popular Deployment Patterns: Intra-Region Spoke-Spoke, Cloud to On-Prem, Inter-Region / Multi-Cloud
+  - Has built-in intelligence to do deterministic next hop selection and routing loop avoidance without any configuration overhead required
+ 
+- Cloud Network Backbone
+  - Enables seamless connections between gateways located in different regions, CSPs or data centers
+
+- Site2Cloud (S2C)
+  - Bridges the gap between on-premises networks and the cloud, creating seamless connections that extend across geographic locations, business-to-business (B2B) partnerships, and beyond
+  - Advanced NAT functionalities facilitate the secure extension of your cloud network to on-premises and edge locations and efficiently handle scenarios involving overlapping IP addresses
+  
+- Aviatrix Hybrid Cloud Edge
+  - Aviatrix Edge, part of the Aviatrix Secure Edge solutions, extends cloud network architectures to on-premises environments, ensuring seamless interconnectivity and operational uniformity across cloud and on-prem landscapes
+  - 4 key features: Hybrid Networking Support, Deployment Flexibility, Cloud Migration and Network Extension, High-Availability Configurations
+
+- ThreatIQ
+  - Continuous updates database about latest threats
+
+- CostIQ
+  - Enhance the management and comprehension of cloud costs
+ 
+- UserVPN
+  - Leverages OpenVPN technology and enables SAML authentication directly from the client
+  - Features:
+    - Unified Dashboard and Management
+    - Flexible Tunneling Options
+      - Split Tunneling: Only specified CIDR ranges are routed through the VPN
+      - Full Tunneling: All user IP sessions are routed through the VPN
+    - Advanced Authentication and Security
+      - MFA that integrates with LDAP/AD, Duo, Okta
+      - Dynamic Access Control
+    - Geo VPN for Optimised Connectivity that utilises AWS Route53 latency-based routing
+   
+- FireNet
+  - Enables seamless integration with leading firewall technologies from Check Point, F5, Fortinet, and Palo Alto Networks
+
+
+#### Questions
+1. What is the primary role of the Aviatrix Controller within the Aviatrix Cloud Networking Platform?
+   > To serve as the central hub for managing and orchestrating cloud and multicloud networks
+2. How does Aviatrix's Site2Cloud (S2C) connectivity feature benefit multicloud environments?
+   > By facilitating seamless integration between on-premises systems and cloud services
+3. Drag the following feature descriptions to the correct Aviatrix feature from the list.
+   - "Orchestrates traffic and policies across multicloud environments." 
+     > Aviatrix Controller
+   - "Provides granular control, ensuring that only authorized traffic accesses specific network segments."
+     > Micro-segmentation
+   - "Integrates with leading firewall technologies to enhance network security."
+     > FireNet
+
+
 
 </details>
