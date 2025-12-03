@@ -1,5 +1,7 @@
 # Aviatrix ACE Multicloud Network Associate
 
+Link to [Aviatrix ACE Multicloud Network Associate is here](https://ace.aviatrix.com/ace-associate). Use code `ACEMULTICLOUD` to unlock free learning resources and free exam
+
 <details> 
 <summary><h2>Identify the Characteristics of On-Premises Data Centers vs. Cloud</h2></summary>
   
