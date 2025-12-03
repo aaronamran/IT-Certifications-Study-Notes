@@ -270,3 +270,55 @@ Credits to [Azure Networking Limitations and Constraints by Shahzad Ali on netJo
    > AWS Transit Gateway, Azure vWAN and GCP VPC Router
 
 </details>
+
+<details> 
+<summary><h2>Understand CSP Limitations based on Real World Scenarios</h2></summary>
+
+- Common CSP Considerations
+  - Downtime and Availability
+  - Vendor Lock-In
+  - Security and Compliance
+  - Cost Predictability
+
+ <br />
+
+ - Scenario One - TechCo
+   - Background: Our customer, TechCo, is a rapidly growing technology company that relies heavily on cloud services for critical workloads. They recently expanded their infrastructure to include an AWS Virtual Private Cloud (VPC) and are leveraging AWS Direct Connect to establish a dedicated, high-speed connection between their on-premises data center and the AWS cloud
+   - Obstacles: TechCo’s data transfer requirements have skyrocketed. They must move large volumes of sensitive data between their on-premises environment and AWS at speeds exceeding 10 Gbps. However, native IPsec VPN solutions struggle to handle such massive throughput efficiently.  Native IPSec would also limit it to only 1.25 Gbps
+  
+<br />
+
+- Scenario Two - CloudCo Enterprises
+  - Background: An enterprise customer with a multicloud strategy faces challenges due to a skills gap in managing multiple clouds and unpredictable costs arising from complex pricing models used by CSPs.
+  - Industry: Technology Solutions
+  - Current Cloud Environment:
+    - Primary CSP: Microsoft Azure
+    - Secondary CSPs: Amazon Web Services (AWS) and Google Cloud Platform (GCP)
+  - Challenges:
+    - Skill Gap: CloudCo’s IT team excels in Azure but lacks expertise in AWS and GCP. Acquiring new skills takes time and resources, leading to project delays and increased costs.
+    - Visiblity and control: Native networking and security services across CSPs lack consistent visibility. Monitoring, troubleshooting, and enforcing policies become cumbersome.
+    - Day 2 operations: Managing multicloud deployments requires continuous attention. Routine tasks like scaling, patching, and compliance checks demand streamlined processes.
+    - Cost optimisation: Data throughput charges vary across CSPs, leading to unpredictable costs. CloudCo seeks a solution that balances performance and cost-effectiveness.
+
+<br />
+
+- Scenario Three - Soft Cloud and Co
+  - Background: Optimizing NAT Gateway Costs with Aviatrix.
+  - Industry: Cloud Solutions Provider
+  - Current Cloud Environment:
+    - Primary CSP: AWS
+    - Secondary CSPs: Azure and Google Cloud Platform (GCP)
+  - Challenges:
+    - High NAT Gateway Costs: Soft Cloud and Co relies on native AWS NAT gateways for outbound traffic. These gateways incur data processing costs, especially for high traffic volumes.
+    - Visibility and Control: Native AWS NAT gateways lack detailed visibility into egress traffic. Soft Cloud and Co struggles to manage and control expenses associated with network operations.
+    - Predictable Budgeting:  The FinOps and budget teams need better cost predictability. Soft Cloud and Co aims to allocate resources effectively and avoid unexpected expenses.
+
+
+#### Questions
+1. What is an effective strategy for managing downtime and availability challenges in a multicloud environment?
+   > Designing fault-tolerant systems and using multi-region deployments
+2. How can a company best address the challenge of vendor lock-in when using multiple cloud service providers (CSPs)?
+   > Implement a multi-cloud strategy using open standards and interoperable tools
+
+
+</details>
