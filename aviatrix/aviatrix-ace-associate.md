@@ -254,3 +254,19 @@ Credits to [Azure Networking Limitations and Constraints by Shahzad Ali on netJo
    > Since Google Cloud Interconnect is not end-to-end encrypted, one must use high performance IPSec encryption to protect data in transit
 
 </details>
+
+<details> 
+<summary><h2>OCI Networking 101, Limitations and Design Considerations</h2></summary>
+
+- Oracle Cloud Infrastructure (OCI): Offers a Dynamic Routing Gateway (DRG) service. A DRG is a virtual router to which customers can attach Virtual Cloud Networks (VCNs), Remote Peering Connections, Site-to-Site IPSec VPN tunnels, and OCI FastConnect private circuits
+- DRG offers routing capabilities to facilitate connectivity between VCNs and external networks. While the DRG does afford users the option to configure routes, diving into the intricacies of route selection within this gateway can prove to be a daunting task. Users often find themselves challenged when identifying the most optimal route configuration within the DRG.
+- Navigating through the route options and features provided by the DRG requires a thorough understanding of networking principles and OCI's specific routing functionalities. Customers may encounter complexities when attempting to determine the most suitable route for their network traffic within the OCI environment. As such, it is essential for users to invest time and effort into comprehensively exploring and understanding the route selection process within OCI's DRG to ensure efficient and reliable network connectivity
+
+
+#### Questions
+1. What is a key routing consideration when attaching Virtual Cloud Network (VCN) to an OCI DRG (Dynamic Routing Gateway)? 
+   > The need to summarize BGP routes to comply with OCI limits
+2. OCI DRG service can be considered to be equivalent to.
+   > AWS Transit Gateway, Azure vWAN and GCP VPC Router
+
+</details>
