@@ -501,6 +501,25 @@ Credits to [Azure Networking Limitations and Constraints by Shahzad Ali on netJo
   - Inherent Distrust
   - Continuous Verification and Authentication
   - Detailed Inspection and Authentication
+- Transitioning to Resource-Based Identification in Cloud Security
+  - In the dynamic landscape of cloud computing, traditional IP-based identification methods are becoming less effective due to the fluid and transient nature of cloud resources
+  - Involves Tagging and Labeling and Utilizing Metadata
+- Advanced Analytics and Threat Intelligence
+  - Real-Time Threat Intelligence Updates
+  - AI-Driven Threat Detection
+  - Automated Response Capabilities
 
+#### Questions
+1. What is a primary benefit of employing a Distributed Security Approach in cloud environments using tools like Aviatrix Distributed Cloud Firewall (DCF)? 
+   > Places security controls close to data sources, enhancing response times and granularity of security
+2. Which strategy does Aviatrix employ to manage security policies across diverse cloud environments?
+   > Centralized management of security policies through Aviatrix CoPilot
+3. Match the Security Approach with its Definition
+   - Distributed Security Approach
+     > Place security controls and mechanisms directly where the data resides and network interactions occur, acknowledging the inherently dispersed nature of cloud environments
+   - Centralised Security Management
+     > Manages and enforces security rules from a single central point of control, ensuring uniform application across all systems and services
+   - Zero Trust Security Model
+     > Assumes no inherent trust for any user, device, or application, requiring continuous verification and authentication of every access request
 
 </details>
