@@ -475,6 +475,32 @@ Credits to [Azure Networking Limitations and Constraints by Shahzad Ali on netJo
    - "Integrates with leading firewall technologies to enhance network security."
      > FireNet
 
+</details>
+
+<details> 
+<summary><h2>Outline Best Practices in Cloud Security</h2></summary>
+
+- Distributed Security Approach
+  - Placing security controls and mechanisms directly where the data resides and network interactions occur, rather than relying solely on a centralized security mode
+
+- Limitations of Centralised Security Models
+  - Inadequate Coverage in Distributed Settings
+  - Centralized Defense Concentration
+  - Ineffective Traffic Monitoring and Control
+
+- Implementing Security Controls Near Data Sources: reduces the latency in threat detection and response, and increases the granularity of security controls
+- Use of Aviatrix Distributed Cloud Firewall (DCF)
+  - Operate effectively within the distributed nature of cloud networks
+  - Allows for the implementation of consistent security policies across all cloud resources, regardless of their location
+  - DCF can be deployed to secure entry (Ingress) and exit (Egress) points across the network, providing robust protection against external and internal threats
+- Centralized Policy: Practice of managing and enforcing security rules and protocols from a single central point of control within an organization
+- Enhancing Protection with a Unified Approach
+  - Centralized Security as a Unified Firewall
+  - Implementing Centralized Policies with Aviatrix CoPilot
+- Fundamental Principles of Zero Trust
+  - Inherent Distrust
+  - Continuous Verification and Authentication
+  - Detailed Inspection and Authentication
 
 
 </details>
