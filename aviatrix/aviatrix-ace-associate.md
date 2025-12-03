@@ -320,5 +320,35 @@ Credits to [Azure Networking Limitations and Constraints by Shahzad Ali on netJo
 2. How can a company best address the challenge of vendor lock-in when using multiple cloud service providers (CSPs)?
    > Implement a multi-cloud strategy using open standards and interoperable tools
 
+</details>
+
+<details> 
+<summary><h2>New Possibilities and New Risks for Cloud Security</h2></summary>
+
+- On-Prem Security Model: Centralized locations, with a strong emphasis on safeguarding internet access through secure DMZ deployment
+- Security Vulnerabilites:
+  - Implications of Centralised Security System: Increased risk of a single point of failure. If the central security system  is compromised, it can lead to a widespread breach throughout the entire network, potentially affecting all connected devices and services.
+  - Implicit Trust within Network Perimeter: With on-prem security models, there existed an assumption that all devices within the perimeter were by default trustworthy. This led to vulnerabilities by not accounting for insider threats or compromised devices. This implicit trust model meant that unauthorized access within the network perimeter could remain undetected, causing significant security risks.
+  - Lateral Movement and Targeting High-Value Data: Once attackers breached the network perimeter, they were able to navigate laterally across the network to target and access high-value data and resources. This ability to move laterally exploited weaknesses in security protocols, allowing critical information to be accessed without detection and leading to significant data breaches and privacy violations.
+  - Challenges of Distributed IT Environments: Modern IT infrastructures are increasingly distributed, spanning across both on-premises and cloud environments. This distribution complicates the maintenance of centralized security controls, making it challenging for security teams to monitor and secure diverse endpoints. As a result, gaps in protection arise, increasing the vulnerability of these systems to cyber threats.
+
+#### Questions
+1. Match the cloud security consideration with its corresponding description.
+   - Cloud Environment 
+     > Cloud spans various locations globally.
+   - Traditional Security Deployment	
+     > Security measures centralized within on-premises data centers.
+   - Distributed Security Deployment	
+     > Security measures deployed closer to workloads, enhancing protection.
+   - Zero Trust Model	
+     > Challenges traditional trust assumptions, considers everything untrusted by default.
+   - Dynamic Nature of Cloud	
+     > Exhibits dynamic characteristics, such as ephemeral IP addresses.
+   - Attribute-Based Security	
+     > Essential for adapting to the dynamic nature of cloud environments, enabling granular access controls.
+2. Which security model challenges traditional trust assumptions by adopting a strict “trust no one” stance?
+   > Zero Trust Cloud Security Model
+3. In cloud security, which approach ensures that security controls are strategically placed at entry and exit points, enhancing overall protection and threat detection capabilities?
+   > Distributed Security Deployment
 
 </details>
