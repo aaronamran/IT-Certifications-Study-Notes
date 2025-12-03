@@ -19,8 +19,10 @@
   - Cloud Service Providers (CSPs) provide maintenance and support by regularly updating and patching infrastructure and platforms to ensure the security and performance of the underlay infrastructure they own. They also offer customer service and technical support to address issues, provide guidance, and ensure optimal service utilization. This proactive approach helps minimize downtime and enhance the overall user experience. Users/customers, on their part, are responsible for managing their data, implementing security measures like encryption, and controlling access to their applications and services. This partnership ensures a smooth, secure cloud experience with minimized downtime and enhanced security
 
 #### Questions
-1. Which type of data center is completely owned by an organization’s IT team? On-premises
-2. On-prem data centers differ from the public cloud in that _____? Application workloads go through layers to be accessible from the internet
+1. Which type of data center is completely owned by an organization’s IT team? 
+   > On-premises
+2. On-prem data centers differ from the public cloud in that _____? 
+   > Application workloads go through layers to be accessible from the internet
 
 </details>
 
@@ -39,8 +41,10 @@
 - IaaS: service is where the CSP takes responsibility for the compute, storage, and networking service. The CSP abstracts the hypervisor and gives you access to the guest Virtual Machine (VM) or compute instance. You are responsible for the OS on that VM and all the libraries, middleware, and applications on that VM
 
 #### Questions
-1. Which type of cloud operates the most like an on-prem data center? Private Cloud
-2. Which public cloud service type would best describe having no control and no responsibility for how the application operates? SaaS
+1. Which type of cloud operates the most like an on-prem data center? 
+   > Private Cloud
+2. Which public cloud service type would best describe having no control and no responsibility for how the application operates? 
+   > SaaS
 
 </details>
 
@@ -52,8 +56,10 @@
 - End User Devices: End User Devices refer to the array of devices used by individuals, including employees, contractors, developers, and others. These devices encompass laptops, desktops, tablets, and smartphones, serving as the interface through which end users access and interact with cloud resources
 
 #### Questions
-1. Which of the following statements best summarizes the significance of on-premises resources in the cloud networking ecosystem? On-premises resources are critical for compliance, low-latency applications, and integration with legacy systems in the cloud networking ecosystem.
-2. Which type of public cloud would best describe having no control and no responsibility for how the application operates? SaaS
+1. Which of the following statements best summarizes the significance of on-premises resources in the cloud networking ecosystem? 
+   > On-premises resources are critical for compliance, low-latency applications, and integration with legacy systems in the cloud networking ecosystem.
+2. Which type of public cloud would best describe having no control and no responsibility for how the application operates? 
+   > SaaS
 
 </details>
 
@@ -74,8 +80,10 @@
   - Considerations with Growing: Consider a scenario where your business requires expansion from a single region to multiple regions or even to another cloud—a trend rapidly gaining momentum. Unfortunately, none of the CSPs is particularly incentivized to assist in expanding to other clouds, as providing multicloud support doesn't align with their best interests. In fact, some CSPs actively avoid using the term "multicloud" altogether
 
 #### Questions
-1. What is one of the key benefits enterprises gain from migrating to the public cloud? Financial flexibility and scalability
-2. Which of the following statements best describes a challenge businesses may face when transitioning to the public cloud? The lack of a comprehensive toolkit for managing networking environments efficiently. Cloud Service Providers (CSPs) offer standardized best practices for networking.
+1. What is one of the key benefits enterprises gain from migrating to the public cloud? 
+   > Financial flexibility and scalability
+2. Which of the following statements best describes a challenge businesses may face when transitioning to the public cloud? 
+   > The lack of a comprehensive toolkit for managing networking environments efficiently. Cloud Service Providers (CSPs) offer standardized best practices for networking.
 
 </details>
 
@@ -90,10 +98,12 @@
   - Dedicated Connectivity: Private, high-performance network connections between their on-premises infrastructure and the cloud provider's data centers. This typically involves options like dedicated leased lines, virtual private networks (VPNs), or direct connections such as AWS Direct Connect or Azure ExpressRoute
 
 #### Questions
-1. Which service enables administrators to control user access to various resources within the cloud infrastructure? Identity and Access Management (IAM)
-2. Which cloud provider offers over 200 services and guarantees a regional-level SLA of 99.99% for its EC2 platform? AWS
-3. Which cloud provider boasts a global network spanning 40 regions and over 120 availability zones, and offers the gcloud CLI for managing resources? GCP
-
+1. Which service enables administrators to control user access to various resources within the cloud infrastructure? 
+   > Identity and Access Management (IAM)
+2. Which cloud provider offers over 200 services and guarantees a regional-level SLA of 99.99% for its EC2 platform? 
+   > AWS
+3. Which cloud provider boasts a global network spanning 40 regions and over 120 availability zones, and offers the gcloud CLI for managing resources? 
+   > GCP
 
 </details>
 
@@ -107,8 +117,10 @@
 - Alibaba Cloud: Enables businesses to expand operations into Chinese market by providing cloud services tailored for local requirements, regulations and business practices
 
 #### Questions
-1. What scenario might lead an organization to choose Microsoft Azure over other cloud service providers? Hybrid Cloud Deployment
-2. In which scenario would Google Cloud Platform (GCP) be particularly beneficial for organizations? Big Data and Analytics
+1. What scenario might lead an organization to choose Microsoft Azure over other cloud service providers? 
+   > Hybrid Cloud Deployment
+2. In which scenario would Google Cloud Platform (GCP) be particularly beneficial for organizations? 
+   > Big Data and Analytics
   
 </details>
 
@@ -128,8 +140,10 @@
 - Skill Shortage and Training Needs: Cloud Networking Specialization, Security and Compliance Proficiency, Multicloud Expertise
 
 #### Questions
-1. Which of the following is a common limitation associated with cloud providers native networking solutions, particularly during operational scaling or when secure connectivity to on-premise or multicloud environments is required? Advanced routing protocols
-2. What happens when organizations become tightly integrated with a specific cloud provider's ecosystem, making it challenging to migrate to alternative providers or adopt multicloud strategies? Cloud provider lock-in
+1. Which of the following is a common limitation associated with cloud providers native networking solutions, particularly during operational scaling or when secure connectivity to on-premise or multicloud environments is required? 
+   > Advanced routing protocols
+2. What happens when organizations become tightly integrated with a specific cloud provider's ecosystem, making it challenging to migrate to alternative providers or adopt multicloud strategies? 
+   > Cloud provider lock-in
 
 </details>
 
@@ -163,8 +177,10 @@
 
 
 #### Questions
-1. What is a key consideration when attaching Virtual Private Clouds (VPCs) to an AWS Transit Gateway, particularly when it is used to facilitate connectivity to on-premises infrastructure or Connect peering? The need to summarize BGP routes to comply with AWS limits
-2. What is a key consideration when attaching Virtual Private Clouds (VPCs) to an AWS Transit Gateway (TGW), particularly when facilitating connectivity to on-premises infrastructure? The necessity to budget for data processing and VPC attachment costs associated with AWS TGW
+1. What is a key consideration when attaching Virtual Private Clouds (VPCs) to an AWS Transit Gateway, particularly when it is used to facilitate connectivity to on-premises infrastructure or Connect peering?
+   > The need to summarize BGP routes to comply with AWS limits
+2. What is a key consideration when attaching Virtual Private Clouds (VPCs) to an AWS Transit Gateway (TGW), particularly when facilitating connectivity to on-premises infrastructure? 
+   > The necessity to budget for data processing and VPC attachment costs associated with AWS TGW
 
 </details>
 
@@ -216,8 +232,10 @@ Credits to [Azure Networking Limitations and Constraints by Shahzad Ali on netJo
   | **Advanced Security Features** | Integrated with Azure Firewall, but may not suffice for complex security requirements in multi-cloud or hybrid environments. | Aviatrix offers advanced security features, including end-to-end encryption, secure segmentation, and advanced threat detection. These are essential for maintaining a robust security posture across diverse cloud infrastructures. |
 
 #### Questions
-1. What is a key throughput limitation when attaching Azure Virtual WAN (vWAN) to on-premise data center? Azure IPSec encryption throughput is only limited to 1.25Gbps on a 10Gbps Express Route Circuit
-2. What is a key consideration when utilizing Microsoft Azure Virtual WAN, particularly when it is used to facilitate connectivity to on-premises infrastructure or other Virtual Hubs? The need to summarize BGP routes to comply with Azure limits  
+1. What is a key throughput limitation when attaching Azure Virtual WAN (vWAN) to on-premise data center? 
+   > Azure IPSec encryption throughput is only limited to 1.25Gbps on a 10Gbps Express Route Circuit
+2. What is a key consideration when utilizing Microsoft Azure Virtual WAN, particularly when it is used to facilitate connectivity to on-premises infrastructure or other Virtual Hubs? 
+   > The need to summarize BGP routes to comply with Azure limits  
 
 </details>
 
