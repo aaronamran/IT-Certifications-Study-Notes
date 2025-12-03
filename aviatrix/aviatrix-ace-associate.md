@@ -282,36 +282,36 @@ Credits to [Azure Networking Limitations and Constraints by Shahzad Ali on netJo
 
  <br />
 
- - Scenario One - TechCo
-   - Background: Our customer, TechCo, is a rapidly growing technology company that relies heavily on cloud services for critical workloads. They recently expanded their infrastructure to include an AWS Virtual Private Cloud (VPC) and are leveraging AWS Direct Connect to establish a dedicated, high-speed connection between their on-premises data center and the AWS cloud
-   - Obstacles: TechCo’s data transfer requirements have skyrocketed. They must move large volumes of sensitive data between their on-premises environment and AWS at speeds exceeding 10 Gbps. However, native IPsec VPN solutions struggle to handle such massive throughput efficiently.  Native IPSec would also limit it to only 1.25 Gbps
+#### Scenario One - TechCo
+- Background: Our customer, TechCo, is a rapidly growing technology company that relies heavily on cloud services for critical workloads. They recently expanded their infrastructure to include an AWS Virtual Private Cloud (VPC) and are leveraging AWS Direct Connect to establish a dedicated, high-speed connection between their on-premises data center and the AWS cloud
+- Obstacles: TechCo’s data transfer requirements have skyrocketed. They must move large volumes of sensitive data between their on-premises environment and AWS at speeds exceeding 10 Gbps. However, native IPsec VPN solutions struggle to handle such massive throughput efficiently.  Native IPSec would also limit it to only 1.25 Gbps
   
 <br />
 
-- Scenario Two - CloudCo Enterprises
-  - Background: An enterprise customer with a multicloud strategy faces challenges due to a skills gap in managing multiple clouds and unpredictable costs arising from complex pricing models used by CSPs.
-  - Industry: Technology Solutions
-  - Current Cloud Environment:
-    - Primary CSP: Microsoft Azure
-    - Secondary CSPs: Amazon Web Services (AWS) and Google Cloud Platform (GCP)
-  - Challenges:
-    - Skill Gap: CloudCo’s IT team excels in Azure but lacks expertise in AWS and GCP. Acquiring new skills takes time and resources, leading to project delays and increased costs.
-    - Visiblity and control: Native networking and security services across CSPs lack consistent visibility. Monitoring, troubleshooting, and enforcing policies become cumbersome.
-    - Day 2 operations: Managing multicloud deployments requires continuous attention. Routine tasks like scaling, patching, and compliance checks demand streamlined processes.
-    - Cost optimisation: Data throughput charges vary across CSPs, leading to unpredictable costs. CloudCo seeks a solution that balances performance and cost-effectiveness.
+#### Scenario Two - CloudCo Enterprises
+- Background: An enterprise customer with a multicloud strategy faces challenges due to a skills gap in managing multiple clouds and unpredictable costs arising from complex pricing models used by CSPs.
+- Industry: Technology Solutions
+- Current Cloud Environment:
+  - Primary CSP: Microsoft Azure
+  - Secondary CSPs: Amazon Web Services (AWS) and Google Cloud Platform (GCP)
+- Challenges:
+  - Skill Gap: CloudCo’s IT team excels in Azure but lacks expertise in AWS and GCP. Acquiring new skills takes time and resources, leading to project delays and increased costs.
+  - Visiblity and control: Native networking and security services across CSPs lack consistent visibility. Monitoring, troubleshooting, and enforcing policies become cumbersome.
+  - Day 2 operations: Managing multicloud deployments requires continuous attention. Routine tasks like scaling, patching, and compliance checks demand streamlined processes.
+  - Cost optimisation: Data throughput charges vary across CSPs, leading to unpredictable costs. CloudCo seeks a solution that balances performance and cost-effectiveness.
 
 <br />
 
-- Scenario Three - Soft Cloud and Co
-  - Background: Optimizing NAT Gateway Costs with Aviatrix.
-  - Industry: Cloud Solutions Provider
-  - Current Cloud Environment:
-    - Primary CSP: AWS
-    - Secondary CSPs: Azure and Google Cloud Platform (GCP)
-  - Challenges:
-    - High NAT Gateway Costs: Soft Cloud and Co relies on native AWS NAT gateways for outbound traffic. These gateways incur data processing costs, especially for high traffic volumes.
-    - Visibility and Control: Native AWS NAT gateways lack detailed visibility into egress traffic. Soft Cloud and Co struggles to manage and control expenses associated with network operations.
-    - Predictable Budgeting:  The FinOps and budget teams need better cost predictability. Soft Cloud and Co aims to allocate resources effectively and avoid unexpected expenses.
+#### Scenario Three - Soft Cloud and Co
+- Background: Optimizing NAT Gateway Costs with Aviatrix.
+- Industry: Cloud Solutions Provider
+- Current Cloud Environment:
+  - Primary CSP: AWS
+  - Secondary CSPs: Azure and Google Cloud Platform (GCP)
+- Challenges:
+  - High NAT Gateway Costs: Soft Cloud and Co relies on native AWS NAT gateways for outbound traffic. These gateways incur data processing costs, especially for high traffic volumes.
+  - Visibility and Control: Native AWS NAT gateways lack detailed visibility into egress traffic. Soft Cloud and Co struggles to manage and control expenses associated with network operations.
+  - Predictable Budgeting:  The FinOps and budget teams need better cost predictability. Soft Cloud and Co aims to allocate resources effectively and avoid unexpected expenses.
 
 
 #### Questions
@@ -350,5 +350,42 @@ Credits to [Azure Networking Limitations and Constraints by Shahzad Ali on netJo
    > Zero Trust Cloud Security Model
 3. In cloud security, which approach ensures that security controls are strategically placed at entry and exit points, enhancing overall protection and threat detection capabilities?
    > Distributed Security Deployment
+
+</details>
+
+<details> 
+<summary><h2>Security Risk Scenarios</h2></summary>
+
+- Two critical paint points of cloud security:
+  - Egress security risks
+  - Challenges associated with centralized firewall deployment
+
+#### Scenario One - Cloud Perimeter Security Risks
+- Think of Internet Egress security as the guard at your network's exit doors. It's all about monitoring and managing the outgoing data to keep information safe
+- Considerations for Network Security: Organizations should assess NAT's suitability alongside other security measures. Supplementing NAT with additional security layers can mitigate its limitations and improve network security. This includes integrating firewall rules, intrusion detection systems, and encryption protocols to bolster defense mechanisms and protect network infrastructure.
+- Security Vulnerabilities: NAT may leave networks vulnerable to certain security threats. Its broad approach to address translation can hinder effective security measures, posing risks to network security. Without the ability to implement granular access controls, networks relying solely on NAT may be more susceptible to unauthorized access and data breaches. For example, a company uses NAT, which shows all internal internet requests as coming from one IP address. If the company wants to restrict access to a sensitive database to only the HR department, NAT’s inability to differentiate between users makes it impossible to enforce this policy strictly. Consequently, any employee could potentially access the HR database, increasing the risk of unauthorized access
+- Limitations of NAT: Unfortunately, NAT, while efficient for address conservation, lacks granularity in access control. It operates in a broad manner, limiting the implementation of fine-grained access control policies. This all-or-none approach can pose challenges in enforcing strict security measures.
+- Misalignment with Zero Trust: While NAT alone might not fully match the principles of Zero Trust, which focuses on constant verification and giving users only the access they need, it can still be part of a strong Zero Trust setup if used with other security tools. By combining NAT with systems that check identities and set flexible access rules, it helps to create a multi-layered security approach. This combination helps overcome NAT’s limitations, ensuring that access decisions are based on ongoing checks of user credentials and situation, not just IP addresses
+- Proxy-Type Services like Squid
+  - Benefits of Squid: Accelerates content delivery by caching frequently-accessed web pages. Improves response times for users accessing common online resources.
+  - Challenges of Squid Management: Lack of centralized control plane complicates management tasks. Administration and configuration management may become cumbersome, especially as the network expands.
+  - Visibility Concerns with Squid: Monitoring and detecting data exfiltration can be challenging due to caching mechanisms. Without robust visibility tools, identifying security threats may prove difficult.
+
+#### Scenario Two - Risks Associated with Centralized Firewall Deployment
+- In traditional on-premises setups, centralized firewall deployment has been a stalwart strategy, guiding all network traffic through designated central points. However, as organizations transition to the cloud, this approach encounters formidable hurdles.
+- Cloud-native applications, characterized by their dynamic and distributed nature, span across multiple virtual private clouds (VPCs) or networks (VNETs). This decentralization complicates the traditional centralized firewall model, introducing complexities and security risks.
+- Further Considerations of Centralized Firewalls in the Cloud:
+  - Latency and Performance: Centralized firewalls become bottlenecks due to increased traffic volume. All traffic must traverse the central point, affecting latency and overall performance. This bottleneck can lead to delays in data transmission and response times, impacting user experience and productivity.
+  - Risk of Attacks: Routing traffic from one VPC/VNET to another exposes it to potential threats. Attacks can propagate across the network, exploiting vulnerabilities in the centralized firewall or compromising traffic integrity during transit. This increases the risk of unauthorized access, data breaches, and other security incidents.
+  - Cost and Scalability: Centralized firewalls require additional hardware to handle the load, incurring costs. Egress charges apply even if traffic is blocked at the VPC/VNET level, contributing to operational expenses. Moreover, as network traffic grows or changes, scaling centralized firewalls to accommodate increased demand becomes complex and costly, posing scalability challenges for organizations.
+- Large Fault Domain: In cloud security networking, a large fault domain occurs when a single point of failure in one part of the network affects a significant portion of the infrastructure. This occurs when numerous resources or services are grouped together within the same domain, like a data center, availability zone, or region
+
+
+#### Questions
+1. Which network security solution presents challenges in implementing fine-grained access control policies?
+   > Network Address Translation (NAT) Gateways
+2. What immediate effect would the failure of a Next Generation Firewall (NGFW) have on Application VPCs?
+   > Traffic between the Application VPCs is no longer inspected, impacting security
+
 
 </details>
