@@ -1,2 +1,0 @@
-# JNCIA-Junos
-
