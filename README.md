@@ -59,7 +59,7 @@ Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Pos
    - [Networking Technology Foundations](https://github.com/aaronamran/IT-Certifications-Study-Notes/blob/main/juniper/Technology-Introduction-Courses/networking-technology-foundations.md)
    - 
 
-1. Associate
+2. Associate
    - [JNCIA-Junos](https://github.com/aaronamran/IT-Certifications-Study-Notes/blob/main/juniper/JNCIA/jncia-junos.md)
 
 </details>
