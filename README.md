@@ -55,7 +55,8 @@ Reference link: [https://arch-center.azureedge.net/Credentials/Certification-Pos
 <details> 
 <summary><h2>Juniper Certifications</h2></summary>
 1. Technology Introduction Courses
-   - [Networking Technology Foundations]()
+   - [Networking Technology Foundations](https://github.com/aaronamran/IT-Certifications-Study-Notes/blob/main/juniper/Technology-Introduction-Courses/networking-technology-foundations.md)
+   - 
 
 1. Associate
    - [JNCIA-Junos](https://github.com/aaronamran/IT-Certifications-Study-Notes/blob/main/juniper/JNCIA/jncia-junos.md)
