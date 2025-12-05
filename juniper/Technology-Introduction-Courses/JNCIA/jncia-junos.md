@@ -1,2 +1,0 @@
-# Junos, Associate (JNCIA-Junos)
-
