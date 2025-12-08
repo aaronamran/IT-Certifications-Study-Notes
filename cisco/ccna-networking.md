@@ -1,5 +1,7 @@
 # CCNA Networking
 
+> Credits to CCNA 200-301 Volume 1 and 2 Official Cert Guide by Wendell Odom, CCIE No. 1624 Emeritus, year 2020
+
 <details>
 <summary><h2>Introduction to Networking</h2></summary>
 
