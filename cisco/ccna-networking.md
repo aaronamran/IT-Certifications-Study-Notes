@@ -10,7 +10,7 @@
   | Presentation | Application                | Application          |                          | HTTP    |                     |        | 
   | Session    | Application                  | Application          |                          | HTTP    |                     |        |
   | Transport  | Transport                    | Transport            | Segment                  | TCP, UDP | Router w/ NAT      |        |
-  | Network    | Internet                     | Network              | Packet                   | IP       | Router             |        |
+  | Network    | Internet                     | Network              | Packet                   | IP       | Router             | Subnet |
   | Data-Link  | Network Access | Data-Link | Frame | Ethernet, 802.11 | Switch | Broadcast domain |
   | Physical   | Network Access | Physical  | Bit/symbol | UTP, single/multimode fiber | Hub | Collision domain | 
 
