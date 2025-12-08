@@ -22,8 +22,23 @@
   - Network-layer: Defines routing so that routers can forward packets of data to correct destination (Protocols: IP)
   - Data-link layer: Protocols and rules that control use of physical media
   - Physical layers: Defines cabling and energy that flow over cables
-- 
-  
+
+###### Data Encapsulation Terminology
+<img width="496" height="230" alt="image" src="https://github.com/user-attachments/assets/de8e7482-b76a-4e83-b8eb-6642b93c7d9d" /> <br />
+1. Create and encapsulate the application data with any required application layer headers. For example, the HTTP OK message can be returned in an HTTP header, followed by part of the contents of a web page.
+2. Encapsulate the data supplied by the application layer inside a transport layer header. For end-user applications, a TCP or UDP header is typically used.
+3. Encapsulate the data supplied by the transport layer inside a network layer (IP) header. IP defines the IP addresses that uniquely identify each computer.
+4. Encapsulate the data supplied by the network layer inside a data-link layer header and trailer. This layer uses both a header and a trailer.
+5. Transmit the bits. The physical layer encodes a signal onto the medium to transmit the frame.
+
+###### Names of TCP/IP Messages
+<img width="366" height="81" alt="image" src="https://github.com/user-attachments/assets/63dc732e-ca26-4bf7-9552-defc6c8a1d76" /> <br />
+- Segment > Transport
+- Packet > Network
+- Frame > Data-link (LH = Link header, LT = Link trailer)
+
+
+
 
 
 #### Fundamentals of Ethernet LANs
