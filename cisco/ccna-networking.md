@@ -4,6 +4,15 @@
 <summary><h2>Introduction to Networking</h2></summary>
 
 #### Introduction to TCP/IP Networking
+- | OSI Model | 4 Layer RFC 1122 TCP/IP Model | 5 Layer TCP/IP Model | Protocol Data Unit (PDU) | Example | Equipment operating | Domain |
+  |-----------|-------------------------------|----------------------|--------------------------|---------|---------------------|--------|
+  | Application | Application                 | Application          |                          | HTTP    |                     |        |
+  | Presentation |                            |                      |                          |         |                     |        | 
+  | Session    |                              |                      |                          |         |                     |        |
+  | Transport  | Transport                    | Transport            | Segment                  | TCP, UDP | Router w/ NAT      |        |
+  | Network    | Internet                     | Network              | Packet                   | IP       | Router             |        |
+  | Data-Link  | Network Access | Data-Link | Frame | Ethernet, 802.11 | Switch | Broadcast domain |
+  | Physical   |                | Physical  | Bit/symbol | UTP, single/multimode fiber | Hub | Collision domain | 
 
 #### Fundamentals of Ethernet LANs
 
