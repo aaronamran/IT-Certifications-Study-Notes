@@ -4,15 +4,15 @@
 <summary><h2>Introduction to Networking</h2></summary>
 
 #### Introduction to TCP/IP Networking
-- | OSI Model | 4 Layer RFC 1122 TCP/IP Model | 5 Layer TCP/IP Model | Protocol Data Unit (PDU) | Example | Equipment operating | Domain |
-  |-----------|-------------------------------|----------------------|--------------------------|---------|---------------------|--------|
-  | Application | Application                 | Application          |                          | HTTP    |                     |        |
-  | Presentation | Application                | Application          |                          | HTTP    |                     |        | 
-  | Session    | Application                  | Application          |                          | HTTP    |                     |        |
-  | Transport  | Transport                    | Transport            | Segment                  | TCP, UDP | Router w/ NAT      |        |
-  | Network    | Internet                     | Network              | Packet                   | IP       | Router             | Subnet |
-  | Data-Link  | Network Access | Data-Link | Frame | Ethernet, 802.11 | Switch | Broadcast domain |
-  | Physical   | Network Access | Physical  | Bit/symbol | UTP, single/multimode fiber | Hub | Collision domain | 
+| OSI Model | 4 Layer RFC 1122 TCP/IP Model | 5 Layer TCP/IP Model | Protocol Data Unit (PDU) | Example | Equipment operating | Domain |
+|-----------|-------------------------------|----------------------|--------------------------|---------|---------------------|--------|
+| Application | Application                 | Application          |                          | HTTP    |                     |        |
+| Presentation | Application                | Application          |                          | HTTP    |                     |        | 
+| Session    | Application                  | Application          |                          | HTTP    |                     |        |
+| Transport  | Transport                    | Transport            | Segment                  | TCP, UDP | Router w/ NAT      |        |
+| Network    | Internet                     | Network              | Packet                   | IP       | Router             | Subnet |
+| Data-Link  | Network Access | Data-Link | Frame | Ethernet, 802.11 | Switch | Broadcast domain |
+| Physical   | Network Access | Physical  | Bit/symbol | UTP, single/multimode fiber | Hub | Collision domain | 
 
 ###### TCP/IP Model (5 Layers):
   - Application Layer: Provides services and interface between software running on PC and network. (Protocols: HTTP, POP3, SMTP)
