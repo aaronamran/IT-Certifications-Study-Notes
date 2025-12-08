@@ -1,7 +1,7 @@
 # CCNA Networking
 
 <details>
-<summary>Introduction to Networking</summary>
+<summary><h2>Introduction to Networking</h2></summary>
 
 ### Introduction to TCP/IP Networking
 
