@@ -3,11 +3,11 @@
 <details>
 <summary><h2>Introduction to Networking</h2></summary>
 
-### Introduction to TCP/IP Networking
+#### Introduction to TCP/IP Networking
 
-### Fundamentals of Ethernet LANs
+#### Fundamentals of Ethernet LANs
 
-### Fundamentals of WANs and IP Routing
+#### Fundamentals of WANs and IP Routing
 
   
 </details>
