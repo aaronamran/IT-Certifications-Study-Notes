@@ -14,46 +14,46 @@
 
 
 <details>
-<summary>Implementing Ethernet LANs</summary>
+<summary><h2>Implementing Ethernet LANs</h2></summary>
 
   
 </details>
 
 
 <details>
-<summary>Implementing VLANs and STP</summary>
+<summary><h2>Implementing VLANs and STP</h2></summary>
 
   
 </details>
 
 
 <details>
-<summary>IPv4 Addressing</summary>
+<summary><h2>IPv4 Addressing</h2></summary>
 
   
 </details>
 
 
 <details>
-<summary>IPv4 Routing</summary>
+<summary><h2>IPv4 Routing</h2></summary>
 
   
 </details>
 
 <details>
-<summary>OSPF</summary>
+<summary><h2>OSPF</h2></summary>
 
   
 </details>
 
 <details>
-<summary>IP Version 6</summary>
+<summary><h2>IP Version 6</h2></summary>
 
   
 </details>
 
 <details>
-<summary>Wireless LANs</summary>
+<summary><h2>Wireless LANs</h2></summary>
 
   
 </details>
