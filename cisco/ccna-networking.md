@@ -39,6 +39,10 @@
 - Packet > Network
 - Frame > Data-link (LH = Link header, LT = Link trailer)
 
+##### OSI Networking Model and Terminology
+- Layer 5-7 of OSI model = Layer 5 TCP/IP model
+- OSI does not use frame/packet/segment for messages, instead it uses Protocol Data Unit (PDU). Uses LxPDU refers to PDU at referenced layer <br />
+  <img width="496" height="212" alt="image" src="https://github.com/user-attachments/assets/2be42308-9693-4114-9fc6-6744ec34ea35" />
 
 
 
