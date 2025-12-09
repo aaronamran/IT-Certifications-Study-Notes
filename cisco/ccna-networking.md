@@ -134,8 +134,14 @@
   - C: R2 repeats the same general process as R1 when R2 receives the HDLC frame
   - D: Like R1 and R2, R3 checks the FCS, discard old data-link header and trailer and matches its own route for destination's subnet
 - Because routers build new data-link headers and trailers, and because new headers contain data-link addresses, PCs and routers need to decide what data-link addresses to use. Address Resolution Protocol (ARP) is used to dynamically learn the data-link address of an IP host connected to a LAN
-- 
+- Rules for Groups of IP Addresses (Networks and Subnets)
+  - 2 IP addresses, not separated from each other by a router, must be in the same group (subnet)
+  - 2 IP addresses, separated from each other by at least 1 router, must be in different groups (subnets)
+- IP Header: <br />
+  <img width="541" height="210" alt="image" src="https://github.com/user-attachments/assets/59ec85c6-ddf2-4b66-b558-12570da56e6c" /> 
 
+##### Other Network Layer Features
+- 
 
 
   
