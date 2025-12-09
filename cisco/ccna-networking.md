@@ -58,10 +58,31 @@
   | 10 Gbps   | 10 Gig Ethernet  | 10GBASE-T          | 802.3an                   | Copper, 100 m      |
 
 
+##### Building Physical Ethernet LANs with UTP
+- Ethernet sends data over UTP cables, but uses electricity that flows over wires
+- To send data, 2 devices follow the same rules called an encoding scheme (like 2 people talk using the same language)
+- In an actual UTP cable, the wires will be twisted together, instead of being parallel. The twisting prevents crosstalk from EMI
+- Straight-Through Cable Pinout:
+  - 10BASE-T and 100BASE-T use 2 pairs of wires in a UTP cable, one for each direction <br />
+      <img width="534" height="263" alt="image" src="https://github.com/user-attachments/assets/d856a0f7-78d5-40a0-a3b4-6bf754c5fdd4" />
+    - As a rule, Ethernet NIC transmitters use the pair connected to pins 1 and 2, NIC receivers use the pair at pins 3 and 6
+    - LAN switches, do the opposite: LAN receivers use pair at pins 1 and 2, LAN transmitters use wire pair at pins 3 and 6 <br />
+      <img width="573" height="211" alt="image" src="https://github.com/user-attachments/assets/1a25476f-0d4b-46e1-a14f-850ea25afa31" /> <br />
+      <img width="640" height="146" alt="image" src="https://github.com/user-attachments/assets/c3592642-ac08-4d48-a8d7-daecd067bfb5" />
+  - 
 
-##### 
+    
+
+
+    
+
+
+
+
 
 ### Fundamentals of WANs and IP Routing
+
+
 
   
 </details>
