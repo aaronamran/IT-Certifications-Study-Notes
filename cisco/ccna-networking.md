@@ -64,14 +64,28 @@
 - In an actual UTP cable, the wires will be twisted together, instead of being parallel. The twisting prevents crosstalk from EMI
 - Straight-Through Cable Pinout:
   - 10BASE-T and 100BASE-T use 2 pairs of wires in a UTP cable, one for each direction <br />
-      <img width="534" height="263" alt="image" src="https://github.com/user-attachments/assets/d856a0f7-78d5-40a0-a3b4-6bf754c5fdd4" />
+    - <img width="534" height="263" alt="image" src="https://github.com/user-attachments/assets/d856a0f7-78d5-40a0-a3b4-6bf754c5fdd4" />
     - As a rule, Ethernet NIC transmitters use the pair connected to pins 1 and 2, NIC receivers use the pair at pins 3 and 6
     - LAN switches, do the opposite: LAN receivers use pair at pins 1 and 2, LAN transmitters use wire pair at pins 3 and 6 <br />
       <img width="573" height="211" alt="image" src="https://github.com/user-attachments/assets/1a25476f-0d4b-46e1-a14f-850ea25afa31" /> <br />
       <img width="640" height="146" alt="image" src="https://github.com/user-attachments/assets/c3592642-ac08-4d48-a8d7-daecd067bfb5" />
-  - 
+  - 1000BASE-T (Gigabit Ethernet) differs from 10BASE-T and 100BASE-T in terms of cabling and pinouts
+    - Requires 4 wire pairs and uses advanced electronics that allow both ends to transmit and receive simultaneously on each wire pair
+    - Has same pinouts for 2 pairs as the 10BASE-T and 100BASE-T standards, and adds a pair at pins 4 5 7 8 <br />
+      <img width="537" height="263" alt="image" src="https://github.com/user-attachments/assets/66fb1ddc-e7f9-4f7a-8254-a83495e2690f" />
 
-    
+
+##### Building Physical Ethernet LANs with Fiber
+- 3 outer layers (outer jacket, strengthener, buffer) of the cable protect the interior, while inner cladding and core works together to allow transmission of light <br />
+  <img width="501" height="236" alt="image" src="https://github.com/user-attachments/assets/4bd24599-d0bf-4072-a489-38b762b00059" />
+  - Multimode Fiber with Internal Reflection <br />
+    <img width="553" height="139" alt="image" src="https://github.com/user-attachments/assets/f0ef5532-98f1-481c-9f2e-8a24827ec05d" />
+  - Single-Mode Fiber with Laser Transmitter (core diameter is 1/5 of multimode cables) <br />
+    <img width="556" height="135" alt="image" src="https://github.com/user-attachments/assets/60a3f9b7-c85e-4e88-b96b-f3c8d5116bf3" /> <br />
+<img width="634" height="199" alt="image" src="https://github.com/user-attachments/assets/1b83c6ad-eb96-428e-98a2-7a428eb8c2f6" />
+
+
+
 
 
     
