@@ -84,6 +84,21 @@
     <img width="556" height="135" alt="image" src="https://github.com/user-attachments/assets/60a3f9b7-c85e-4e88-b96b-f3c8d5116bf3" /> <br />
 <img width="634" height="199" alt="image" src="https://github.com/user-attachments/assets/1b83c6ad-eb96-428e-98a2-7a428eb8c2f6" />
 
+##### Sending Data in Ethernet Networks
+- Ethernet Data-Link Protocols
+  - Ethernet Frame Format: Header + Encapsulated Data + Trailer <br />
+    <img width="534" height="84" alt="image" src="https://github.com/user-attachments/assets/f2fd4e9c-adb2-4bc4-b11f-982317a8e993" />
+  - <img width="640" height="366" alt="image" src="https://github.com/user-attachments/assets/4ce44776-0785-4a84-9458-ee794249d60c" />
+- Ethernet addressing aka Media Access Control (MAC) addresses = 6-byte-long = 48-bit-long binary numbers
+  - MAC are usually listed as 12-digit hexadecimal numbers (Cisco devices usually add periods to the number for easier readability; ex: 0000.0C12.3456)
+  - Most MAC addresses represent a single NIC or other Ethernet port, so these addresses are often called a unicast Ethernet address
+  - Sending data to a destination unicast MAC address only works if all MAC addresses are unique. To solve this, manufacturers must ask IEEE to assign a universally unique 3-byte code called the organisationally unique identifier (OUI) <br />
+    <img width="490" height="174" alt="image" src="https://github.com/user-attachments/assets/8d7ca9a5-fa99-43f3-b17c-a5d7e4d806d0" />
+  - Broadcast address: Has a value of FFFF.FFFF.FFFF. Frames sent to this address should be sent to all devices on the LAN.
+  - Multicast address: Frames sent to this address will be forwarded to multiple recipient devices
+- 
+  
+
 
 
 
