@@ -96,20 +96,45 @@
     <img width="490" height="174" alt="image" src="https://github.com/user-attachments/assets/8d7ca9a5-fa99-43f3-b17c-a5d7e4d806d0" />
   - Broadcast address: Has a value of FFFF.FFFF.FFFF. Frames sent to this address should be sent to all devices on the LAN.
   - Multicast address: Frames sent to this address will be forwarded to multiple recipient devices
-- 
-  
-
-
-
-
-
-    
-
-
-
+- Error Detection with Frame Check Sequence (FCS): Sender uses complex math formula to the frame before sending and stores the result in the FCS field. Receiver uses same math formula and compares with sender's results
+- Error detection is not error recovery. Errored frames are discarded, while TCP recovers lost data by sending again
+- Modern Ethernet LANs uses full duplex: Device sends and receives at same time
+- Older LAN hubs used half duplex: Device alternates between sending and receiving
+- Half-duplex devices face collision errors of electrical signals <br />
+  <img width="471" height="106" alt="image" src="https://github.com/user-attachments/assets/80cd2b49-0b29-40e6-80a7-b0e794db9693" />
+- That's why Carrier Sense Multiple Access with Collision Detection (CSMA/CD) algorithm is used. CSMA/CD allows only 1 device to successfully send a frame at any point in time
 
 
 ### Fundamentals of WANs and IP Routing
+- WAN technologies define the physical (L1) standards and data-link (L2) protocols used for long distance communication
+- Leased-Line WANs:
+  - Internetwork uses a router connected to each LAN with a WAN link between routers. Crooked line between routers commonly hides physical details of the line <br />
+    <img width="614" height="109" alt="image" src="https://github.com/user-attachments/assets/c1cbb97f-c1e4-4222-805c-c17491e05df0" />
+  - 2 most popular data-link layer protocols for leased lines: High-Level Data Link Control (HDLC) and Point-to-Point Protocol (PPP). All control the correct delivery of data over a physical link
+  - HDLC: Less work than Ethernet because of simple point-to-point topology of a leased line (HDLC frame from 1 router can only go to the other end of the link) <br />
+    <img width="643" height="294" alt="image" src="https://github.com/user-attachments/assets/3da2d16b-466e-4654-98bd-07153b299657" /> <br />
+    ISO standard HDLC does not have a Type field. Cisco routers use a Ciso-proprietary variation of HDLC that adds a Type field: <br />
+    <img width="332" height="123" alt="image" src="https://github.com/user-attachments/assets/8a1de958-f5a4-43c6-a8d6-64bbe01d9d83" />
+
+##### Ethernet as a WAN Technology:
+- Many WAN service providers (SP) use the model: <br />
+  <img width="594" height="207" alt="image" src="https://github.com/user-attachments/assets/ddd80f11-042f-4264-8987-18e7c8b5b55c" />
+- Ethernet WAN logically behaves like a point-to-point connection between 2 routers, and physically behaves as if a physical fiber Ethernet link existed between 2 routers
+- Ethernet over MPLS (EoMPLS): Multiprotocol Label Switching used for creating Ethernet service for customer
+- EoMPLS acting like a simple Ethernet link between 2 routers: <br />
+  <img width="608" height="122" alt="image" src="https://github.com/user-attachments/assets/4c5fb43b-044f-4cf2-bb14-97c158611513" />
+- EoMPLS link uses Ethernet for L1 and L2 functions. <br />
+  <img width="606" height="199" alt="image" src="https://github.com/user-attachments/assets/d7b51728-fe5c-4b2a-badc-b238031d7017" />
+
+##### IP Routing
+- Only concerns itself with the logical details of delivering data, not the physical details
+- <img width="608" height="393" alt="image" src="https://github.com/user-attachments/assets/c2d87c58-9041-4306-b209-efd41a44dbff" /> <br />
+  - A: Network layer decides 150.150.4.10 is not in local IP subnet, so PC1 needs to send packet to R1
+  - B: R1 compares received packet's destination address (150.150.4.10) to its routing table and finds entry for subnet 150.150.4.0. R1 encapsulates IP packet and forwards it to next-hop router R2
+  - C: R2 repeats the same general process as R1 when R2 receives the HDLC frame
+  - D: Like R1 and R2, R3 checks the FCS, discard old data-link header and trailer and matches its own route for destination's subnet
+- Because routers build new data-link headers and trailers, and because new headers contain data-link addresses, PCs and routers need to decide what data-link addresses to use. Address Resolution Protocol (ARP) is used to dynamically learn the data-link address of an IP host connected to a LAN
+- 
 
 
 
