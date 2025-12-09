@@ -45,11 +45,23 @@
   <img width="496" height="212" alt="image" src="https://github.com/user-attachments/assets/2be42308-9693-4114-9fc6-6744ec34ea35" />
 
 
+### Fundamentals of Ethernet LANs
+- Ethernet refers to a family of LAN standards that define physical and data-link layers of the world's most popular wired LAN technology
+- Wired LAN -> switch, Wireless LAN -> access point (AP)
+- Types of Ethernet:
+  | Speed | Common Name | Informal IEEE Standard Name | Formal IEEE Standard Name | Cable Type, Maximum Length |
+  |-------|-------------|-----------------------------|---------------------------|--------------------|
+  | 10 Mbps | Ethernet  | 10BASE-T                    | 802.3                     | Copper, 100 m      |
+  | 100 Mbps | Fast Ethernet | 100BASE-T              | 802.3u                    | Copper, 100 m      |
+  | 1000 Mbps | Gigabit Ethernet | 1000BASE-LX        | 802.3z                    | Fiber, 5000 m      |
+  | 1000 Mbps | Gigabit Ethernet | 1000BASE-L         | 802.3ab                   | Copper, 100 m      |
+  | 10 Gbps   | 10 Gig Ethernet  | 10GBASE-T          | 802.3an                   | Copper, 100 m      |
 
 
-#### Fundamentals of Ethernet LANs
 
-#### Fundamentals of WANs and IP Routing
+##### 
+
+### Fundamentals of WANs and IP Routing
 
   
 </details>
